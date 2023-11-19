@@ -1,0 +1,189 @@
+/* =========================== footer =================================  */
+
+.footer {
+    overflow: hidden;
+}
+
+.topFooter {
+    background: var(--bg-footer);
+}
+
+.bootmFooter {
+    background: var(--bg-footer-dark);
+}
+
+.footerNav {
+    margin: 0px 10px;
+}
+
+.footerNav a {
+    text-decoration: none;
+    color: #999;
+}
+
+.footerBorder {
+    border-bottom: 1px solid #737b85;
+}
+
+.footerNav h3 {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.tabUlContent {
+    column-count: 5;
+    -webkit-column-count: 5;
+    margin: 10px 0px;
+}
+
+.tabUlContent li {
+    padding: 3px 10px 4px;
+}
+
+.tabUlContent li a {
+    font-size: 12px;
+    color: #a9b5c4;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footerCompany {
+    padding: 30px 0px;
+}
+
+.CompanyList h3 {
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 13px;
+    padding: 0;
+}
+
+.CompanyList ul li {
+    color: #ccc;
+    padding-bottom: 10px;
+    list-style: none;
+    display: block;
+}
+
+.CompanyList ul li a {
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.companyList,
+.partnerList,
+.connectList {
+    padding: 0px 40px 0px 20px;
+}
+
+.socialIcon {
+    font-size: 20px;
+    margin: 0px 7px;
+}
+
+.connectHelp {
+    padding-top: 20px;
+}
+
+.connectHelp ul li {
+    display: inline-block;
+    width: 48%;
+}
+
+.subTopSection h3 {
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 13px;
+}
+
+.subTopSection p {
+    font-size: 12px;
+    line-height: 15px;
+    color: #999;
+    margin-top: 6px;
+}
+
+.signInput {
+    height: 40px;
+    width: 68%;
+    padding: 0 10px;
+    margin-top: 4px;
+    border: 0;
+    /* font-family: Open Sans Light; */
+    font-size: 14px;
+    color: #999;
+    background-color: #f3f3f3;
+}
+
+.signBtn {
+    border: 0;
+    color: #fff;
+    width: 102px;
+    height: 40px;
+    padding: 5px;
+    margin-top: 4px;
+    font-size: 14px;
+    position: absolute;
+    background: #e45301;
+    text-transform: capitalize;
+}
+
+.subBottSection h3 {
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 13px;
+}
+
+.subBottHelpline {
+    display: inline-block;
+}
+
+.subBottHelpline p {
+    margin-bottom: 0px;
+    color: #999;
+}
+
+.helpCall {
+    font-size: 30px;
+    color: var(--bg-white);
+    margin-right: 10px;
+}
+
+.paymentOptions {
+    padding: 10px 0 0;
+    margin-top: 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table;
+    width: 100%;
+    background: #131a22;
+    border-top: 1px solid #383e46;
+}
+
+.paymentTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 14px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 13px;
+    color: #d3d3d3;
+    line-height: 42px;
+    height: 42px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background: #232f3e;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    border-bottom: 3px solid #fa832a;
+    color: #fff;
+    background-color: transparent !important;
+}

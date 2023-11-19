@@ -1,1467 +1,1634 @@
-<div class="col-sm-6 col-lg-3">
+<!-- ==================== sidebar section ==============================  -->
 
-    <!-- ==================== sidebar section ==============================  -->
-
-    <aside class="sidebar">
-        <!-- <section> -->
-        <ul class="sideAbs">
-            <li class="hoverUl">
-                <a href="#" class="sidemenu">
-                    <img src="../assets/img/sidebar/agriculture.webp" class="sideIcon" alt="">
-                    <img src="../assets/img/shopCategory/agriculture-garden.webp" class="sideMobIcon" alt="">
-                    Agriculture Garden & Landscaping
-                    <i class="fa-solid fa-plus sideMobPlus"></i>
-                </a>
-                <!-- --------- sub Menu ----------  -->
-                <div class="allSubMenu_div" id="sidd1">
-                    <div class="submenu">
-                        <ul>
-                            <li class="hoverSubUl">
-                                <a href="#">Brush Cutter and Accessories</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
+<aside class="sidebar" [ngClass]="{'active' : isActive}">
+    <!-- <section> -->
+    <div class="sideHeadingSection">
+        <div class="sideBackBtn" (click)="onCancelClick()">
+            <i class="fa-solid fa-arrow-left backArrow"></i>
+        </div>
+        <h3 class="sidebarHeading">Categories</h3>
+    </div>
+    <ul class="sideBar_list">
+        <li class="sideBar_item" [class.active]="activeItem === 1">
+            <a href="#" class="sidemenu" (click)="setActive(1)" >
+                <img src="../../assets/img/sidebar/agriculture.webp" class="sideIcon" alt="">
+                <img src="../../assets/img/shopCategory/agriculture-garden.webp" class="sideMobIcon" alt="">
+                Agriculture Garden & Landscaping
+                <i class="fa-solid fa-plus sideMobPlus"></i>
+            </a>
+            <!-- --------- sub Menu ----------  -->
+            <div class="allSubMenu_div" id="sidd1">
+                <div class="submenu">
+                    <ul>
+                        <li class="hoverSubUl">
+                            <a href="javascript:void(0);">Brush Cutter and Accessories
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Sprayers</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="javascript:void(0);">Sprayers
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Garden Hand Tools</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Garden Hand Tools
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Grain Processing Machine</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="">Grain Processing Machine
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Harvester</a>
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Harvester
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </li>
-                            <li><a href="">Chaff Cutter</a></li>
-                            <li><a href="">Lawn Mower</a></li>
-                            <li><a href="">Chain Saws</a></li>
-                            <li><a href="">Agriculture Implement</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="hoverUl">
-                <a href="#" class="sidemenu">
-                    <img src="../assets/img/sidebar/power.webp" class="sideIcon" alt="">
-                    <img src="../assets/img/shopCategory/power-tools.webp" class="sideMobIcon" alt="">
-                    <i class="fa-solid fa-plus sideMobPlus"></i>
-                    Power Tools
-                </a>
-                <!-- --------- sub Menu ----------  -->
-                <div class="allSubMenu_div" id="sidd1">
-                    <div class="submenu">
-                        <ul>
-                            <li class="hoverSubUl">
-                                <a href="">Brush Cutter and Accessories</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Sprayers</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Garden Hand Tools</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Grain Processing Machine</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Harvester</a>
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li><a href="">Chaff Cutter</a></li>
-                            <li><a href="">Lawn Mower</a></li>
-                            <li><a href="">Chain Saws</a></li>
-                            <li><a href="">Agriculture Implement</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="hoverUl">
-                <a href="#" class="sidemenu">
-                    <img src="../assets/img/sidebar/material-handling.webp" class="sideIcon" alt="">
-                    <img src="../assets/img/shopCategory/material-handling-packaging.webp" class="sideMobIcon" alt="">
-                    <i class="fa-solid fa-plus sideMobPlus"></i>
-                    Material Handling and Packaging
-                </a>
-                <!-- --------- sub Menu ----------  -->
-                <div class="allSubMenu_div" id="sidd1">
-                    <div class="submenu">
-                        <ul>
-                            <li class="hoverSubUl">
-                                <a href="">Brush Cutter and Accessories</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Sprayers</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Garden Hand Tools</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Grain Processing Machine</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Harvester</a>
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li><a href="">Chaff Cutter</a></li>
-                            <li><a href="">Lawn Mower</a></li>
-                            <li><a href="">Chain Saws</a></li>
-                            <li><a href="">Agriculture Implement</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="hoverUl">
-                <a href="#" class="sidemenu">
-                    <img src="../assets/img/sidebar/office-supplies.webp" class="sideIcon" alt="">
-                    <img src="../assets/img/shopCategory/office-supply.webp" class="sideMobIcon" alt="">
-                    <i class="fa-solid fa-plus sideMobPlus"></i>
-                    Office Supplies
-                </a>
-                <!-- --------- sub Menu ----------  -->
-                <div class="allSubMenu_div" id="sidd1">
-                    <div class="submenu">
-                        <ul>
-                            <li class="hoverSubUl">
-                                <a href="">Brush Cutter and Accessories</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Sprayers</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Garden Hand Tools</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Grain Processing Machine</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Harvester</a>
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li><a href="">Chaff Cutter</a></li>
-                            <li><a href="">Lawn Mower</a></li>
-                            <li><a href="">Chain Saws</a></li>
-                            <li><a href="">Agriculture Implement</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="hoverUl">
-                <a href="#" class="sidemenu">
-                    <img src="../assets/img/sidebar/hand-tools.webp" class="sideIcon" alt="">
-                    <img src="../assets/img/shopCategory/hand-tools.webp" class="sideMobIcon" alt="">
-                    <i class="fa-solid fa-plus sideMobPlus"></i>
-                    Hand Tools
-                </a>
-                <!-- --------- sub Menu ----------  -->
-                <div class="allSubMenu_div" id="sidd1">
-                    <div class="submenu">
-                        <ul>
-                            <li class="hoverSubUl">
-                                <a href="">Brush Cutter and Accessories</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Sprayers</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Garden Hand Tools</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Grain Processing Machine</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Harvester</a>
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li><a href="">Chaff Cutter</a></li>
-                            <li><a href="">Lawn Mower</a></li>
-                            <li><a href="">Chain Saws</a></li>
-                            <li><a href="">Agriculture Implement</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="hoverUl">
-                <a href="#" class="sidemenu">
-                    <img src="../assets/img/sidebar/electrical.webp" class="sideIcon" alt="">
-                    <img src="../assets/img/shopCategory/electricals.webp" class="sideMobIcon" alt="">
-                    <i class="fa-solid fa-plus sideMobPlus"></i>
-                    Electrical
-                </a>
-                <!-- --------- sub Menu ----------  -->
-                <div class="allSubMenu_div" id="sidd1">
-                    <div class="submenu">
-                        <ul>
-                            <li class="hoverSubUl">
-                                <a href="">Brush Cutter and Accessories</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Sprayers</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Garden Hand Tools</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Grain Processing Machine</a>
-                                <!-- ------ nested SubMenu --------  -->
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="hoverSubUl">
-                                <a href="">Harvester</a>
-                                <div class="nestedSubMenu">
-                                    <div class="shopMainCategory">
-                                        <div class="shopDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">KBC</a></li>
-                                                <li><a href="">Namibind</a></li>
-                                                <li><a href="">Swaggers</a></li>
-                                                <li><a href="">HINDVANTURE</a></li>
-                                                <li><a href="">Xtraon</a></li>
-                                                <li><a href="">Security Store</a></li>
-                                                <li><a href="">KUSAM-MECO</a></li>
-                                            </ul>
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Shop by Brand</span>
-                                                </li>
-                                                <li><a href="">Below 888</a></li>
-                                                <li><a href="">888 - 1776</a></li>
-                                                <li><a href="">1776 - 3552</a></li>
-                                                <li><a href="">3552 - 7104</a></li>
-                                                <li><a href="">Above 7104</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mainCatDiv">
-                                            <ul class="shopBy">
-                                                <li class="shopHeading">
-                                                    <span>Main Categories</span>
-                                                </li>
-                                                <li><a href="">Currency Counting Machine</a></li>
-                                                <li><a href="">Fake Note Detector</a></li>
-                                                <li><a href="">Cash Drawer</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li><a href="">Chaff Cutter</a></li>
-                            <li><a href="">Lawn Mower</a></li>
-                            <li><a href="">Chain Saws</a></li>
-                            <li><a href="">Agriculture Implement</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="hoverUl">
-                <a href="#" class="sidemenu">
-                    <img src="../assets/img/sidebar/pneumatics.webp" class="sideIcon" alt="">
-                    <img src="../assets/img/shopCategory/pneumatics.webp" class="sideMobIcon" alt="">
-                    <i class="fa-solid fa-plus sideMobPlus"></i>
-                    Hydraulics and Pneumatics
-                </a>
-            </li>
-            <li class="hoverUl">
-                <a href="#" class="sidemenu">
-                    <img src="../assets/img/sidebar/furniture-hospitality.webp" class="sideIcon" alt="">
-                    <img src="../assets/img/shopCategory/furniture-hospitality-food-service.webp" class="sideMobIcon" alt="">
-                    <i class="fa-solid fa-plus sideMobPlus"></i>
-                    Furniture, Hospitality and Food Service
-                </a>
-            </li>
-            <li class="hoverUl">
-                <a href="#" class="sidemenu">
-                    <img src="../assets/img/sidebar/automative.webp" class="sideIcon" alt="">
-                    <img src="../assets/img/shopCategory/automotive-maintenance-accessories.webp" class="sideMobIcon" alt="">
-                    <i class="fa-solid fa-plus sideMobPlus"></i>
-                    Automotive Maintenance and Lubricants
-                </a>
-            </li>
-            <li class="hoverUl">
-                <a href="#" class="sidemenu">
-                    <img src="../assets/img/sidebar/cleaning.webp" class="sideIcon" alt="">
-                    <img src="../assets/img/shopCategory/cleaning.webp" class="sideMobIcon" alt="">
-                    <i class="fa-solid fa-plus sideMobPlus"></i>
-                    Cleaning
-                </a>
-            </li>
-            <li class="hoverUl">
-                <a href="#" class="sidemenu">
-                    <img src="../assets/img/sidebar/plumbing.webp" class="sideIcon" alt="">
-                    <img src="../assets/img/shopCategory/agriculture-garden.webp" class="sideMobIcon" alt="">
-                    <i class="fa-solid fa-plus sideMobPlus"></i>
-                    Plumbing
-                </a>
-            </li>
-            <li class="hoverUl">
-                <a href="#" class="sidemenu">
-                    <img src="../assets/img/sidebar/measuring.png" class="sideIcon" alt="">
-                    <img src="../assets/img/shopCategory/testing-measuring-instruments.webp" class="sideMobIcon" alt="">
-                    <i class="fa-solid fa-plus sideMobPlus"></i>
-                    Testing and Measuring Instruments
-                </a>
-            </li>
-            <li class="hoverUl">
-                <a href="#" class="sidemenu">
-                    <img src="../assets/img/sidebar/pumps.webp" class="sideIcon" alt="">
-                    <img src="../assets/img/shopCategory/pumps.webp" class="sideMobIcon" alt="">
-                    <i class="fa-solid fa-plus sideMobPlus"></i>
-                    Pumps
-                </a>
-            </li>
-            <!-- <hr class="dropdown-divider"> -->
-            <p class="sideCategoryHover">
-                <!-- <a href="" class="sideCategory">See All Categories</a> -->
-                <span type="button" class=" sideCategory" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop">See All Categories</span>
-            </p>
-            <div class="sotreArea">
-                <div class="sideSaleIcon">
-                    <a href="">
-                        <div>
-                            <img src="../assets/img/istockphoto.jpg" alt="">
-                        </div>
-                        Special Offers
-                    </a>
-                </div>
-                <div class="sideSaleIcon">
-                    <a href="">
-                        <div>
-                            <img src="../assets/img/sellerarea.webp" alt="">
-                        </div>
-                        Seller Hub
-                    </a>
-                </div>
-                <div class="sideSaleIcon borderNone">
-                    <a href="">
-                        <div>
-                            <img src="../assets/img/megaphones.png" alt="">
-                        </div>
-                        Clearance Sale
-                    </a>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Chaff Cutter
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Lawn Mower
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Chain Saws
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Agriculture Implement
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </ul>
-        <!-- </section> -->
-    </aside>
-</div>
+        </li>
+        <li class="sideBar_item" [class.active]="activeItem === 2">
+            <a href="#" class="sidemenu" (click)="setActive(2)" >
+                <img src="../../assets/img/sidebar/power.webp" class="sideIcon" alt="">
+                <img src="../../assets/img/shopCategory/power-tools.webp" class="sideMobIcon" alt="">
+                <i class="fa-solid fa-plus sideMobPlus"></i>
+                Power Tools
+            </a>
+            <!-- --------- sub Menu ----------  -->
+            <div class="allSubMenu_div" id="sidd1">
+                <div class="submenu">
+                    <ul>
+                        <li class="hoverSubUl">
+                            <a href="#">Brush Cutter and Accessories
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Sprayers
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Garden Hand Tools
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="">Grain Processing Machine
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Harvester
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Chaff Cutter
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Lawn Mower
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Chain Saws
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Agriculture Implement
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="sideBar_item" [class.active]="activeItem === 3" >
+            <a href="#" class="sidemenu" (click)="setActive(3)">
+                <img src="../../assets/img/sidebar/material-handling.webp" class="sideIcon" alt="">
+                <img src="../../assets/img/shopCategory/material-handling-packaging.webp" class="sideMobIcon" alt="">
+                <i class="fa-solid fa-plus sideMobPlus"></i>
+                Material Handling and Packaging
+            </a>
+            <!-- --------- sub Menu ----------  -->
+            <div class="allSubMenu_div" id="sidd1">
+                <div class="submenu">
+                    <ul>
+                        <li class="hoverSubUl">
+                            <a href="#">Brush Cutter and Accessories
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Sprayers
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Garden Hand Tools
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="">Grain Processing Machine
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Harvester
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Chaff Cutter
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Lawn Mower
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Chain Saws
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Agriculture Implement
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="sideBar_item" [class.active]="activeItem === 4">
+            <a href="#" class="sidemenu" (click)="setActive(4)">
+                <img src="../../assets/img/sidebar/office-supplies.webp" class="sideIcon" alt="">
+                <img src="../../assets/img/shopCategory/office-supply.webp" class="sideMobIcon" alt="">
+                <i class="fa-solid fa-plus sideMobPlus"></i>
+                Office Supplies
+            </a>
+            <!-- --------- sub Menu ----------  -->
+            <div class="allSubMenu_div" id="sidd1">
+                <div class="submenu">
+                    <ul>
+                        <li class="hoverSubUl">
+                            <a href="#">Brush Cutter and Accessories
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Sprayers
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Garden Hand Tools
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="">Grain Processing Machine
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Harvester
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Chaff Cutter
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Lawn Mower
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Chain Saws
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Agriculture Implement
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="sideBar_item" [class.active]="activeItem === 5">
+            <a href="#" class="sidemenu" (click)="setActive(5)">
+                <img src="../../assets/img/sidebar/hand-tools.webp" class="sideIcon" alt="">
+                <img src="../../assets/img/shopCategory/hand-tools.webp" class="sideMobIcon" alt="">
+                <i class="fa-solid fa-plus sideMobPlus"></i>
+                Hand Tools
+            </a>
+            <!-- --------- sub Menu ----------  -->
+            <div class="allSubMenu_div" id="sidd1">
+                <div class="submenu">
+                    <ul>
+                        <li class="hoverSubUl">
+                            <a href="#">Brush Cutter and Accessories
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Sprayers
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Garden Hand Tools
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="">Grain Processing Machine
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Harvester
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Chaff Cutter
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Lawn Mower
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Chain Saws
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Agriculture Implement
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="sideBar_item" [class.active]="activeItem === 6">
+            <a href="#" class="sidemenu" (click)="setActive(6)">
+                <img src="../../assets/img/sidebar/electrical.webp" class="sideIcon" alt="">
+                <img src="../../assets/img/shopCategory/electricals.webp" class="sideMobIcon" alt="">
+                <i class="fa-solid fa-plus sideMobPlus"></i>
+                Electrical
+            </a>
+            <!-- --------- sub Menu ----------  -->
+            <div class="allSubMenu_div" id="sidd1">
+                <div class="submenu">
+                    <ul>
+                        <li class="hoverSubUl">
+                            <a href="#">Brush Cutter and Accessories
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Sprayers
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Garden Hand Tools
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="">Grain Processing Machine
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Harvester
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                            <!-- ------ nested SubMenu --------  -->
+                            <div class="nestedSubMenu">
+                                <div class="shopMainCategory">
+                                    <div class="shopDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">KBC</a></li>
+                                            <li><a href="">Namibind</a></li>
+                                            <li><a href="">Swaggers</a></li>
+                                            <li><a href="">HINDVANTURE</a></li>
+                                            <li><a href="">Xtraon</a></li>
+                                            <li><a href="">Security Store</a></li>
+                                            <li><a href="">KUSAM-MECO</a></li>
+                                        </ul>
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Shop by Brand</span>
+                                            </li>
+                                            <li><a href="">Below 888</a></li>
+                                            <li><a href="">888 - 1776</a></li>
+                                            <li><a href="">1776 - 3552</a></li>
+                                            <li><a href="">3552 - 7104</a></li>
+                                            <li><a href="">Above 7104</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mainCatDiv">
+                                        <ul class="shopBy">
+                                            <li class="shopHeading">
+                                                <span>Main Categories</span>
+                                            </li>
+                                            <li><a href="">Currency Counting Machine</a></li>
+                                            <li><a href="">Fake Note Detector</a></li>
+                                            <li><a href="">Cash Drawer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Chaff Cutter
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Lawn Mower
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Chain Saws
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                        <li class="hoverSubUl">
+                            <a href="#">Agriculture Implement
+                                <i class="fa-solid fa-angle-right hoverSubUlArr"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="sideBar_item">
+            <a href="#" class="sidemenu">
+                <img src="../../assets/img/sidebar/pneumatics.webp" class="sideIcon" alt="">
+                <img src="../../assets/img/shopCategory/pneumatics.webp" class="sideMobIcon" alt="">
+                <i class="fa-solid fa-plus sideMobPlus"></i>
+                Hydraulics and Pneumatics
+            </a>
+        </li>
+        <li class="sideBar_item">
+            <a href="#" class="sidemenu">
+                <img src="../../assets/img/sidebar/furniture-hospitality.webp" class="sideIcon" alt="">
+                <img src="../../assets/img/shopCategory/furniture-hospitality-food-service.webp" class="sideMobIcon"
+                    alt="">
+                <i class="fa-solid fa-plus sideMobPlus"></i>
+                Furniture, Hospitality and Food Service
+            </a>
+        </li>
+        <li class="sideBar_item">
+            <a href="#" class="sidemenu">
+                <img src="../../assets/img/sidebar/automative.webp" class="sideIcon" alt="">
+                <img src="../../assets/img/shopCategory/automotive-maintenance-accessories.webp" class="sideMobIcon"
+                    alt="">
+                <i class="fa-solid fa-plus sideMobPlus"></i>
+                Automotive Maintenance and Lubricants
+            </a>
+        </li>
+        <li class="sideBar_item">
+            <a href="#" class="sidemenu">
+                <img src="../../assets/img/sidebar/cleaning.webp" class="sideIcon" alt="">
+                <img src="../../assets/img/shopCategory/cleaning.webp" class="sideMobIcon" alt="">
+                <i class="fa-solid fa-plus sideMobPlus"></i>
+                Cleaning
+            </a>
+        </li>
+        <li class="sideBar_item">
+            <a href="#" class="sidemenu">
+                <img src="../../assets/img/sidebar/plumbing.webp" class="sideIcon" alt="">
+                <img src="../../assets/img/shopCategory/agriculture-garden.webp" class="sideMobIcon" alt="">
+                <i class="fa-solid fa-plus sideMobPlus"></i>
+                Plumbing
+            </a>
+        </li>
+        <li class="sideBar_item">
+            <a href="#" class="sidemenu">
+                <img src="../../assets/img/sidebar/measuring.png" class="sideIcon" alt="">
+                <img src="../../assets/img/shopCategory/testing-measuring-instruments.webp" class="sideMobIcon" alt="">
+                <i class="fa-solid fa-plus sideMobPlus"></i>
+                Testing and Measuring Instruments
+            </a>
+        </li>
+        <li class="sideBar_item">
+            <a href="#" class="sidemenu">
+                <img src="../../assets/img/sidebar/pumps.webp" class="sideIcon" alt="">
+                <img src="../../assets/img/shopCategory/pumps.webp" class="sideMobIcon" alt="">
+                <i class="fa-solid fa-plus sideMobPlus"></i>
+                Pumps
+            </a>
+        </li>
+        <!-- <hr class="dropdown-divider"> -->
+        <p class="sideCategoryHover">
+            <!-- <a href="" class="sideCategory">See All Categories</a> -->
+            <span type="button" class=" sideCategory" data-bs-toggle="modal" data-bs-target="#staticBackdrop">See All
+                Categories</span>
+        </p>
+        <div class="sotreArea">
+            <div class="sideSaleIcon">
+                <a href="">
+                    <div>
+                        <img src="../../assets/img/istockphoto.jpg" alt="">
+                    </div>
+                    Special Offers
+                </a>
+            </div>
+            <div class="sideSaleIcon">
+                <a href="">
+                    <div>
+                        <img src="../../assets/img/sellerarea.webp" alt="">
+                    </div>
+                    Seller Hub
+                </a>
+            </div>
+            <div class="sideSaleIcon borderNone">
+                <a href="">
+                    <div>
+                        <img src="../../assets/img/megaphones.png" alt="">
+                    </div>
+                    Clearance Sale
+                </a>
+            </div>
+        </div>
+    </ul>
+    <!-- </section> -->
+</aside>

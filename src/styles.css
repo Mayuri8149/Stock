@@ -1,1 +1,586 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* background-color:  */
+    --bg-grey: #232f3e;
+    --bg-white: #fff;
+    --bg-btn: #db3f1f;
+    --bg-btn-light: #e9611e;
+    --bg-white-light: #f5f5f5;
+    --bg-footer: #232f3e;
+    --bg-footer-dark: #131a22;
+
+
+    /* text color  */
+    --primary-font: 'Poppins', sans-serif;
+    --text-white: #fff;
+    --text-orange: #db3f1f;
+    --text-grey: #444;
+    --text-grey-light: #525d62;
+
+}
+
+body {
+    background-color: var(--bg-white-light) !important;
+    font-family: var(--primary-font);
+}
+
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+p {
+    margin-bottom: 0 !important;
+}
+
+.max-container {
+    max-width: 1400px !important;
+}
+
+@media (min-width:1025px) {
+    .sideBar_item:hover .submenu {
+        display: block;
+    }
+
+    .sideBar_item:hover {
+        background-color: var(--text-grey-light);
+        cursor: pointer;
+    }
+
+    .sideBar_item:hover .sidemenu {
+        color: var(--text-white) !important;
+    }
+
+    .hoverSubUl:hover {
+        background: var(--bg-white) !important;
+        color: black !important;
+    }
+
+    .hoverSubUl:hover a {
+        color: var(--text-grey-light) !important;
+    }
+
+    .sidemenu {
+        pointer-events: none;
+    }
+}
+
+@media (min-width:800px) and (max-width:1025px) {
+
+    .fixedPadding {
+        padding-top: 110px;
+    }
+
+    .sidebar {
+        position: fixed;
+        transform: translateX(-100%);
+        top: 70px;
+        opacity: 0;
+        transition: all 0.5s linear;
+        height: 88%;
+        overflow-y: scroll;
+        width: 50%;
+        display: none;
+    }
+
+    .main_section {
+        width: 100% !important;
+    }
+
+    .hamburgerIcon {
+        display: block !important;
+    }
+
+    .navbar-toggler {
+        line-height: normal !important;
+    }
+
+    .navbar-brand .AllLogo {
+        display: none;
+    }
+
+    .navbar-brand .mobileLogo {
+        display: block;
+    }
+
+    .searchHolder {
+        width: 400px;
+    }
+
+    .mobileNav {
+        display: none;
+    }
+
+    .mobFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fixedPadding {
+        padding-top: 90px;
+    }
+
+    .sideHeadingSection {
+        display: block;
+    }
+
+    .sidebar {
+        position: fixed;
+        transform: translateX(-100%);
+        /* top: 60px; */
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: all 0.5s linear;
+        height: 100%;
+        overflow-y: scroll;
+        width: 50%;
+        z-index: 9999;
+    }
+
+    .submenu {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: auto;
+        transition: all 1s linear;
+        background-color: rgb(245, 245, 245);
+    }
+
+    .submenu ul li a {
+        color: #666 !important;
+        padding: 14px 30px 14px 40px;
+    }
+
+    .sideMobPlus {
+        display: block !important;
+    }
+
+    .sideBar_item {
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .sidemenu {
+        padding-top: 14px !important;
+        padding-bottom: 14px !important;
+    }
+
+    .nestedSubMenu {
+        display: none;
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: auto;
+        overflow-y: scroll;
+    }
+
+    .hoverSubUlArr {
+        display: block !important;
+        margin-left: 5px;
+    }
+
+    .shopMainCategory {
+        height: 410px;
+    }
+
+    .sideMobPlus {
+        display: block;
+    }
+
+}
+
+@media (max-width:768px) {
+    .sideBar_item:hover {
+        background-color: var(--text-grey-light);
+        cursor: pointer;
+    }
+
+    .sideBar_item:hover .sidemenu {
+        color: var(--text-white) !important;
+    }
+
+    .hoverSubUl:hover {
+        background: var(--bg-white);
+        color: black;
+    }
+
+    .hoverSubUl:hover a {
+        color: var(--text-grey-light);
+    }
+
+    .hoverSubUlArr {
+        display: block !important;
+        margin-left: 5px;
+    }
+
+    .sidemenu {
+        padding-top: 14px !important;
+        padding-bottom: 14px !important;
+    }
+
+    .sideBar_item {
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .submenu ul li a {
+        color: #666 !important;
+        padding: 14px 30px 14px 40px !important;
+    }
+
+    .hoverSubUl {
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .sideHeadingSection {
+        display: block !important;
+    }
+
+    .mobileCartBucket {
+        display: block !important;
+    }
+
+    .mobileNav {
+        display: block !important;
+    }
+
+    .m_top {
+        margin-top: 10px !important;
+    }
+
+    .dFlex {
+        flex-direction: column;
+    }
+
+    .carBanner {
+        height: 100%;
+    }
+
+    .carBanner img {
+        height: 100%;
+    }
+
+    .officeImg {
+        display: none;
+    }
+
+    .logRegBtn {
+        display: none;
+    }
+
+    .locationBtn {
+        display: none !important;
+    }
+
+    .cartBtn {
+        display: none !important;
+    }
+
+    .downApp {
+        display: none;
+    }
+
+    .allCatDiv {
+        display: none;
+    }
+
+    .searchHolder {
+        padding: 0px !important;
+        width: 300px;
+    }
+
+    .fixedPadding {
+        padding-top: 140px !important;
+    }
+
+    .navbar {
+        padding: 3px 0px !important;
+    }
+
+    .inputSearchDiv {
+        display: none;
+    }
+
+    .inputRow {
+        display: block !important;
+        padding: 6px 0px;
+        background: white;
+        z-index: 99;
+    }
+
+    .sidebar {
+        position: fixed !important;
+        transform: translateX(-100%);
+        /* top: 60px; */
+        top: 0 !important;
+        left: 0;
+        opacity: 0;
+        transition: all 0.5s linear;
+        height: 100%;
+        overflow-y: scroll;
+        width: 50%;
+        z-index: 9999 !important;
+    }
+
+    .sideMobPlus {
+        display: block !important;
+    }
+
+    .submenu {
+        position: relative !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        transition: all 1s linear !important;
+        background-color: rgb(245, 245, 245) !important;
+    }
+
+    .nestedSubMenu {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: none !important;
+    }
+
+    .sideIcon {
+        display: none;
+    }
+
+    .sideMobIcon {
+        display: inline-block !important;
+    }
+
+    .sotreArea {
+        display: none;
+    }
+
+    .whatsAppBox {
+        width: 28% !important;
+    }
+
+    .navbar-toggler-icon {
+        height: auto !important;
+    }
+
+    .dropdown-toggle::after {
+        content: "" !important;
+        display: none !important;
+    }
+
+    .dropdown-toggle {
+        border-radius: 50% !important;
+        background: var(--bg-white) !important;
+        padding: 2px 8px !important;
+    }
+
+    .m_top {
+        display: none;
+    }
+
+    .orderSection {
+        display: block !important;
+    }
+
+    .shopSection {
+        display: block !important;
+    }
+
+    .mobileUser {
+        left: -105px !important;
+    }
+}
+
+@media (max-width:426px) {
+    .submenu ul li a {
+        white-space: initial;
+    }
+
+    .productMobRes {
+        width: 50% !important;
+        padding: 5px !important;
+    }
+
+    .amount {
+        font-size: 14px;
+    }
+
+    .addToCart {
+        width: 100%;
+    }
+
+    .mobileLogo {
+        display: block !important;
+    }
+
+    .AllLogo {
+        display: none;
+    }
+
+    .mobFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobileUser {
+        left: -128px !important;
+    }
+
+    .cardImage {
+        height: auto !important;
+    }
+
+    .fixedPadding {
+        padding-top: 140px;
+    }
+
+    .tabUlContent {
+        column-count: 2 !important;
+    }
+
+    .companyFlex {
+        flex-direction: column;
+    }
+
+    .subscriber {
+        margin-top: 10px;
+    }
+
+    .paymentOptions img {
+        width: 370px;
+    }
+
+    .copyright {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .sidebar {
+        /* top: 80px; */
+        width: 70%;
+        /* left: 0; */
+    }
+
+    .mobResponsive {
+        width: 50% !important;
+    }
+
+    .inputSearchMain input {
+        height: 40px !important;
+    }
+
+    .shopCatWidth {
+        width: 33.33% !important;
+    }
+
+    .whatsappIcon img {
+        width: 40px;
+    }
+
+    #scrollup {
+        height: 2.5rem;
+        width: 2.2rem;
+    }
+
+    #scrollup a {
+        padding: 10px;
+    }
+
+    .sidebar-form .call-action {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .sidebar-form {
+        right: -350px;
+        width: 350px;
+    }
+
+    .whatsAppBox {
+        width: 50% !important;
+    }
+
+    .cartBox {
+        width: 49% !important;
+    }
+
+}
+
+@media (max-width:376px) {
+    body{
+        overflow-x: hidden !important;
+    }
+    .sidebar-form {
+        display: none;
+    }
+
+    .amountSectionHover {
+        padding: 0;
+    }
+
+    .searchHolder {
+        width: 220px;
+    }
+
+    .mobileUser {
+        left: -130px !important;
+    }
+
+    .sidebar-form {
+        right: -280px;
+        width: 280px;
+        z-index: 100;
+    }
+
+    .whatsAppBox {
+        width: 60% !important;
+    }
+
+}
+
+@media (max-width:321px) {
+    .productMobRes {
+        width: 100% !important;
+    }
+
+    .searchHolder {
+        width: 180px;
+    }
+
+    .paymentOptions img {
+        width: 300px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    .whatsAppBox {
+        width: 70% !important;
+    }
+
+    .sidemenu {
+        padding-right: 40px;
+    }
+}
+
+@media (min-width:1023px) {
+    .mobileNav {
+        display: none;
+    }
+}

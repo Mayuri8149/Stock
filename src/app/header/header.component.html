@@ -1,20 +1,22 @@
 <header id="header" class="fixed-top">
-    <div class="smallHeader">For any query, email us at <font style="color: #ff0000;">test@materialstocks.com</font>
-        or call us on <font style="color: #ff0000;">+91 1234567890</font>
+    <div class="smallHeader">For any query, email us at <font class="smallHeader_font">test@materialstocks.com</font>
+        or call us on <font class="smallHeader_font">+91 1234567890</font>
     </div>
     <nav id="mainNav" class="navbar navbar-expand-lg">
-        <div class="container">
+        <div class="container max-container">
             <div class="mobFlex">
                 <!-- ========= hamberger icon for Mobile ============  -->
                 <button class="navbar-toggler hamburgerIcon" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars hamberger"></i></span>
+                    <span class="navbar-toggler-icon" (click)="onHamburgerClick()">
+                        <i class="fa-solid fa-bars hamberger"></i>
+                    </span>
                 </button>
 
                 <a class="navbar-brand" href="#">
-                    <img src="img/logo.png" class="img-fluid AllLogo" alt="">
-                    <img src="img/ib-logo-back.svg" class="img-fluid mobileLogo" alt="">
+                    <img src="../../assets/img/logo.png" class="img-fluid AllLogo" alt="">
+                    <img src="../../assets/img/ib-logo-back.svg" class="img-fluid mobileLogo" alt="">
                 </a>
             </div>
 
@@ -102,9 +104,9 @@
             </div>
             <div class="downApp">
                 <div style="text-align: center;">
-                    <a href=""><img src="img/playstore.png" class="downloadicon" alt=""></a>
-                    <span style="color: white;">|</span>
-                    <a href=""><img src="img/iosstore.png" class="downloadicon" alt=""></a>
+                    <a href=""><img src="../../assets/img/playstore.png" class="downloadicon" alt=""></a>
+                    <span style="color: white; margin: 5px;">|</span>
+                    <a href=""><img src="../../assets/img/iosstore.png" class="downloadicon" alt=""></a>
                 </div>
                 <p class="downloadText">
                     Download the APP!
@@ -112,4 +114,21 @@
             </div>
         </div>
     </nav>
+    <!-- ================ main input search for Mobile =================  -->
+    <div class="container max-container">
+        <div class="row MobSearchJs">
+            <div class="col-lg-12 inputRow">
+                <div class="inputSearchMain">
+                    <form action="">
+                        <div>
+                            <button class="searchBtnMain">
+                                <i class="fa-solid fa-magnifying-glass searchBtnIcon"></i>
+                            </button>
+                        </div>
+                        <input class="searchHolder focusNone" placeholder="Search Product, Brands etc..." type="text">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
