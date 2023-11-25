@@ -1,3 +1,20 @@
+/* ========= carosual===============  */
+
+.main_carosuel{
+    height: 100%;
+}
+
+.remove_padding{
+    padding: 0 5px;
+}
+.carouselRight_bottomImg{
+    width: 50%;
+    height: 120px;
+}
+.carouselRight_bottomImg img{
+    height: 100%;
+    width: 100%;
+}
 
 /* ================================= production cards =============================  */
 .dFlex {
@@ -10,7 +27,8 @@
 }
 .slideImg {
     width: 100%;
-    height: 335px !important;
+    height: 100% !important;
+    cursor: pointer;
 }
 
 .cardImage {
@@ -181,7 +199,7 @@
 }
 
 .byhoverComp {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
 }
 
@@ -611,7 +629,7 @@ ol.numlist p {
 /* ============== track order modal ==================  */
 
 .trackOrderDiv {
-    background: #4d359a url("/img/trackorder-popup-bg.jpg");
+    background: #4d359a url("../../assets/img/trackorder-popup-bg.jpg");
     max-width: 630px !important;
     /* margin: auto; */
     /* background-repeat: no-repeat; */
@@ -859,8 +877,8 @@ ol.numlist p {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, .5);
     z-index: 9998;
     display: none;

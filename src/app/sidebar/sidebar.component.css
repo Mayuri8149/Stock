@@ -8,8 +8,13 @@
     border: 1px solid transparent;
     border-right: 1px solid #ddd;
     position: sticky;
-    top: 13%;
+    top: 12%;
     z-index: 99;
+    height: fit-content;
+}
+.sideBar_list{
+    height: 500px;
+    overflow-y: scroll;
 }
 
 .sideHeadingSection {
@@ -94,7 +99,7 @@ a.sidemenu:active {
     position: absolute;
     top: 0;
     /* left: 304px; */
-    left: 325px;
+    left: 100%;
     width: 250px;
     height: 547px;
     background-color: var(--text-grey-light);

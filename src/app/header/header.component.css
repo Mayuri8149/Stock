@@ -232,7 +232,9 @@ p {
     background: var(--bg-btn-light) !important;
     border: 0;
     color: #fff !important;
-    border-radius: 5px;
+    border-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
     font-weight: 400;
     /* width: 120px; */
     height: 40px;
