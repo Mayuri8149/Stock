@@ -10,12 +10,12 @@
     position: sticky;
     top: 12%;
     z-index: 99;
-    height: fit-content;
+    /* height: fit-content; */
 }
-.sideBar_list{
+/* .sideBar_list{
     height: 500px;
     overflow-y: scroll;
-}
+} */
 
 .sideHeadingSection {
     position: relative;
