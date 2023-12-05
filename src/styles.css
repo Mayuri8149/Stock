@@ -103,7 +103,12 @@ p {
 
 @media (min-width:800px) and (max-width:1025px) {
 
-
+    .shortBy_category{
+        display: none;
+    }
+    .top_Header{
+        display: none;
+    }
     .fixedPadding {
         padding-top: 110px;
     }
@@ -229,6 +234,12 @@ p {
 }
 
 @media (max-width:768px) {
+    .top_Header {
+        display: none !important;
+    }
+    .shortBy_category{
+        display: none;
+    }
     .sideBar_item:hover {
         background-color: var(--text-grey-light);
         cursor: pointer;
@@ -429,7 +440,7 @@ p {
     }
 
     .mobileUser {
-        left: -105px !important;
+        left: -140px !important;
     }
 }
 
@@ -613,3 +624,43 @@ p {
         display: none;
     }
 }
+
+
+@media (min-width:769px) and (max-width:820px)  {
+    .top_Header {
+        display: none;
+    }
+    .shortBy_category {
+        display: none;
+    }
+    .downApp {
+        display: none;
+    }
+    .shortBy_category {
+        display: none;
+    }
+    .cartBtn {
+        display: none !important;
+    }
+    .locationBtn{
+        display: none !important;
+    }
+    .logRegBtn{
+        display: none !important;
+    }
+    .inputSearchDiv{
+        display: none !important;
+    }
+    .dropdown-toggle::after {
+        content: "" !important;
+        display: none !important;
+    }
+
+    .dropdown-toggle {
+        border-radius: 50% !important;
+        background: var(--bg-white) !important;
+        padding: 2px 8px !important;
+    }
+}
+
+

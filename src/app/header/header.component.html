@@ -1,5 +1,5 @@
 <header id="header" class="fixed-top">
-    <div class="top_Header">
+    <div class="top_Header" *ngIf="showHeaderTop">
         <div class="container max-container">
             <div class="top_header_content">
                 <a href="#" class="offer_text">
@@ -41,7 +41,7 @@
                         <i class="fa-solid fa-bars hamberger"></i>
                     </span>
                 </button>
-                <div class="shortBy_category">
+                <div class="shortBy_category" *ngIf="showHeaderTop">
                     <div class="short_text">
                         Shop by Category
                     </div>

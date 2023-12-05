@@ -1116,3 +1116,199 @@
 .ibCoins_i:hover .ibCoinsInfo{
     display: block;
 }
+
+
+/* ==================== productDetails ===============  */
+@media (max-width:1024px) {
+    .right_side_mobileWrapper {
+        display: none;
+    }
+    .left_side_mobileWrapper{
+        width: 100%;
+    }
+    .mobileTab_price_area {
+        display: block;
+    }
+    .discount {
+        text-align: justify;
+    }
+    .buttonWrap{
+        display: none;
+    }
+    .mobtab_buttonWrap {
+        display: block;
+        position: fixed;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 0;
+        z-index: 1030;
+        width: 100%;
+        background: #fff;
+    }
+    .mobtab_high_val_ph{
+        width: 100%;
+    }
+    .customer_review{
+        margin-bottom: 100px;
+    }
+    .recommed_btn_div{
+        flex-direction: column;
+    }
+    .recomend_addBtn,.recomend_buyBtn{
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .mobileTab_price_area {
+        display: block;
+    }
+
+    /* .top_Header {
+        display: none !important;
+    } */
+
+    .right_side_mobileWrapper {
+        display: none;
+    }
+
+    .productDetails_padding {
+        padding-top: 150px;
+    }
+
+    .product_div {
+        flex-direction: column;
+    }
+
+    .product_img_area {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .product_detail_content {
+        width: 100%;
+    }
+
+    .productDetails_rightArea {
+        z-index: initial;
+    }
+
+    .discount {
+        text-align: justify;
+    }
+
+    .recomend_addBtn,
+    .recomend_buyBtn {
+        width: 100%;
+    }
+
+    .img_box img {
+        width: 150px;
+    }
+
+    .product_waranty_garenty {
+        display: none;
+    }
+
+    .shortBy_category {
+        display: none;
+    }
+    .buttonWrap{
+        display: none;
+    }
+    .mobtab_buttonWrap {
+        display: block;
+        position: fixed;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 0;
+        z-index: 1030;
+        width: 100%;
+        background: #fff;
+    }
+    .mobtab_high_val_ph{
+        width: 100%;
+    }
+    .customer_review{
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width:426px) {
+    .reviewRate_star_box {
+        flex-direction: column;
+    }
+
+    .recommended_card {
+        width: 50%;
+    }
+
+    .progress_box {
+        width: 100%;
+    }
+
+    .progress_containr {
+        width: 100%;
+    }
+
+    .meter_range {
+        width: 245px;
+    }
+
+    .pdp_review_box .nav {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .productDetail_top {
+        flex-direction: column;
+    }
+
+    .productDetail_top .breadcrumb {
+        justify-content: center;
+    }
+    .pincode_input{
+        width: 100%;
+    }
+}
+@media (max-width:376px)  {
+    .productDetail_top{
+        padding: 13px 5px 5px 5px;
+    }
+    .product_img_area{
+        height: 480px;
+        min-height: 480px;
+    }
+    .offer_dis_heading{
+        font-size: 14px;
+    }
+    .product_name{
+        height: 50px !important;
+    }
+    .meter_range{
+        width: 197px;
+    }
+    .recommended_card{
+        width: 100%;
+    }
+}
+
+@media (min-width:769px) and (max-width:820px)  {
+    .product_div{
+        flex-direction: column;
+    }
+    .product_img_area{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media (min-width:426px) and (max-width:708px)  {
+    .recommended_card{
+        width: 50%;
+    }
+    .reviewRate_star_box{
+        flex-direction: column;
+    }
+}
