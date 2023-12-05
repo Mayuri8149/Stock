@@ -1118,6 +1118,10 @@
 }
 
 
+.footer_wrapper{
+    margin-top: 50px;
+}
+
 /* ==================== productDetails ===============  */
 @media (max-width:1024px) {
     .right_side_mobileWrapper {
