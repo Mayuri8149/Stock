@@ -550,6 +550,10 @@ p {
         width: 350px;
     }
 
+    .sidebar-form.show{
+        width: 350px !important;
+    }
+
     .whatsAppBox {
         width: 50% !important;
     }
