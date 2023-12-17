@@ -321,15 +321,16 @@
 }
 .printArea_anchor{
     text-decoration: none;
-    margin: 0 3px;
+    margin: 0 5px;
+    cursor: pointer;
 }
 .printArea_anchor:nth-child(1),.printArea_anchor:nth-child(2){
     color: #999;
 }
-.printArea_anchor:nth-last-child(1){
-    color: #dc4e41;
+.printArea_anchor:nth-last-of-type(1){
+    color: #dc4e41 !important;
 }
-.printArea_anchor:nth-last-child(2){
+.printArea_anchor:nth-last-of-type(2){
     color: #3a5897;
 }
 .printArea_anchor i{
@@ -381,7 +382,7 @@
     height: 100%;
 }
 .product_detail_content{
-    width: 460px;
+    /* width: 460px; */
     padding: 18px 26px 7px;
 }
 .product_detail_heading{
@@ -1122,6 +1123,116 @@
     margin-top: 50px;
 }
 
+/* ========================= all detail popup ======================  */
+
+.email_popup.active {
+    display: block;
+}
+.email_popup{
+    width: 435px;
+    position: absolute;
+    left: -350px;
+    margin: 25px 0 0;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    background: #fff;
+    z-index: 2;
+    display: none;
+}
+
+.email_pop_heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: #444;
+    background: #f7f7f7;
+    font-size: 14px;
+    padding: 8px;
+    line-height: 18px;
+    border-bottom: solid 1px #e3e3e3;
+    font-size: 14px;
+}
+
+.email_head_text{
+    font-weight: 600;
+}
+
+.email_head_cross{
+    border-left: solid 1px #e3e3e3;
+    cursor: pointer;
+    /* padding: 2px; */
+}
+.email_head_cross i{
+    padding: 0 10px;
+}
+.email_wrap{
+    padding: 15px 12px 12px;
+}
+.email_wrap input,textarea{
+    width: 100%;
+    font-size: 13px;
+    padding: 10px;
+    border: solid 1px #cfcfcf;
+    margin: 5px;
+}
+.email_wrap textarea{
+    height: 65px;
+}
+.email_submit{
+    width: 112px;
+    font-size: 14px;
+    padding: 10px 0;
+    margin: 5px;
+    background: #f98700;
+    color: #fff;
+    border: 0;
+    border-bottom: solid 3px #b75e00;
+}
+
+/* ============= view plans ====================  */
+
+.viewPlans_header{
+    background-color: #232f3e;
+    color: #fff;
+    padding: 13px !important;
+}
+
+.viewPlans_dialog{
+    max-width: 700px;
+}
+
+.viewPlan_close{
+    background: none !important;
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    color: #fff !important;
+    padding: 4px;
+}
+.viewPlans_pills .nav-link{
+    font-size: 13px;
+    color: #484848;
+    padding: 10px 15px;
+}
+.viewPlans_pills .nav-link.active{
+    background-color: #fff;
+    color: #232f3e;
+    border-left: 4px solid #f9611e;
+    border-radius: 0;
+}
+
+.viewBank_list{
+    height: 400px;
+    overflow-y: auto;
+}
+.viewBank_list li{
+        list-style-type: none;
+        padding: 8px;
+        background-color: #f5f5f5;
+        margin: 3px;
+        border-radius: 9px;
+}
+
 /* ==================== productDetails ===============  */
 @media (max-width:1024px) {
     .right_side_mobileWrapper {
@@ -1276,6 +1387,10 @@
     .pincode_input{
         width: 100%;
     }
+    .email_popup{
+        width: 350px;
+        left: -120px;
+    }
 }
 @media (max-width:376px)  {
     .productDetail_top{
@@ -1316,3 +1431,10 @@
         flex-direction: column;
     }
 }
+@media (min-width:320px) and (max-width:375px)  {
+    .email_popup{
+        width: 300px;
+        left: -100px;
+    }
+}
+

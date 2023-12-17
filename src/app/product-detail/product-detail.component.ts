@@ -10,6 +10,7 @@ export class ProductDetailComponent {
 
   mainImgSrc: string = '../../assets/img/img1.webp'
   current : number | null = null;
+  emailPopupActive : boolean = false
 
   updateMainImg(newSrc:string,index:number) : void{
     console.log("change" , newSrc, "and index no is" , index);
@@ -32,4 +33,12 @@ export class ProductDetailComponent {
     // this.sidebarActive = !this.sidebarActive
     this.sidebarActive = true
   }
+
+  emailPopupToggle(){
+    this.emailPopupActive = !this.emailPopupActive
+  }
+  emailPopupCloseToggle(){
+    this.emailPopupActive = false
+  }
+
 }
