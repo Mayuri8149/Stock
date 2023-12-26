@@ -120,7 +120,7 @@
 .smallHeader {
     font-size: 12px;
     color: #000;
-    text-align: center;
+    text-align: right;
     padding-right: 20px;
     margin: 0 auto;
     display: block;
@@ -294,6 +294,9 @@ p {
     border: none;
     outline: none;
 }
+.drop_item{
+    font-size: 14px;
+}
 
 .allCategoryBtn {
     background: var(--bg-btn-light) !important;
@@ -308,7 +311,7 @@ p {
     overflow: hidden;
     position: absolute;
     text-align: left;
-    font-size: 15px;
+    font-size: 14px;
     padding: 0 10px;
 }
 

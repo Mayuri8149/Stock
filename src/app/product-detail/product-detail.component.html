@@ -151,7 +151,8 @@
 							</div>
 							<div class="emi_discount">
 								<b>EMI starts at ₹ <span>3325</span>/month. No Cost EMI available </b>
-								<span class="emi_anchor"><a href="#">EMI options</a></span>
+								<span class="emi_anchor"><a data-bs-toggle="modal" data-bs-target="#viewPlans">EMI
+										options</a></span>
 							</div>
 							<div class="earn_upto_star">
 								<div class="ibcoins_wrp">
@@ -218,7 +219,8 @@
 											</tr>
 											<tr>
 												<td style="width: 150px;">
-													<a href="#" class="more_details_btn">More Details</a>
+													<a class="more_details_btn" (click)="scrollTO('specification-tab')">More
+														Details</a>
 												</td>
 											</tr>
 										</tbody>
@@ -269,15 +271,21 @@
 											<div class="modal-body">
 												<div class="row">
 													<div class="col-md-4 viewPlans_left">
-														<div class="nav flex-column nav-pills viewPlans_pills me-3" id="v-pills-tab" role="tablist"
-															aria-orientation="vertical">
-															<button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Credit Card</button>
-															<button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Debit Card</button>
+														<div class="nav flex-column nav-pills viewPlans_pills me-3" id="v-pills-tab"
+															role="tablist" aria-orientation="vertical">
+															<button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+																data-bs-target="#v-pills-home" type="button" role="tab"
+																aria-controls="v-pills-home" aria-selected="true">Credit Card</button>
+															<button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+																data-bs-target="#v-pills-profile" type="button" role="tab"
+																aria-controls="v-pills-profile" aria-selected="false">Debit
+																Card</button>
 														</div>
 													</div>
 													<div class="col-md-8 viewPlans_right">
 														<div class="tab-content" id="v-pills-tabContent">
-															<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+															<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+																aria-labelledby="v-pills-home-tab">
 																<ul class="viewBank_list">
 																	<li>IDBI</li>
 																	<li>HDFC</li>
@@ -340,7 +348,46 @@
 									</div>
 									<div class="req_callback">
 										<i class="fa-solid fa-phone"></i>
-										<a href="#" class="callback_anch">Request Callback</a>
+										<a class="callback_anch" data-bs-toggle="modal" data-bs-target="#request_toggle">Request
+											Callback</a>
+
+										<!-- modal  -->
+
+										<div class="modal fade" id="request_toggle" tabindex="-1"
+											aria-labelledby="request_toggleLabel" aria-hidden="true">
+											<div class="modal-dialog req_call_dailog">
+												<div class="modal-content">
+													<div class="modal-header req_call_head">
+														<h5 class="modal-title req_call_title" id="request_toggleLabel">
+															Request Callback
+															<div>We will get in touch with you</div>
+														</h5>
+														<button type="button" class="btn-close call_back_close"
+															data-bs-dismiss="modal" aria-label="Close"></button>
+													</div>
+													<div class="modal-body req_call_body">
+														<form action="" class="call_back_form">
+															<input type="text" class="call_back_input" placeholder="Name">
+															<input type="text" class="call_back_input" placeholder="Email">
+															<input type="text" class="call_back_input" placeholder="GSTN NO">
+															<input type="text" class="call_back_input" placeholder="Phone">
+															<select name="" id="" class="call_back_input">
+																<option value="">Select</option>
+																<option value="">Maharastra</option>
+																<option value="">Goa</option>
+																<option value="">Delhi</option>
+															</select>
+															<button type="submit" class="call_back_btn">Call Me
+																Back</button>
+														</form>
+													</div>
+													<div class="modal-footer call_back_footer">
+														By clicking on Submit button you agree to industrybuying.com's
+														<a>Terms & Conditions </a> and <a>Privacy Policy.</a>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 									<div class="repeat_list">
 										<i class="fa-solid fa-rectangle-list"></i>
@@ -386,9 +433,9 @@
 									<div class="quantity_left">
 										<span class="quantity_heading">Update Quantity</span>
 										<div class="update_quantity">
-											<button type="button" class="minus_btn"> - </button>
-											<input type="text" value="1" class="qunatity_input">
-											<button type="button" class="plus_btn"> + </button>
+											<button type="button" class="minus_btn" (click)="decrement()"> - </button>
+											<input type="text" [value]="count" class="qunatity_input">
+											<button type="button" class="plus_btn" (click)="increment()"> + </button>
 										</div>
 									</div>
 									<div class="quantity_right">
@@ -431,7 +478,7 @@
 												</div>
 											</div>
 											<div class="getCutom_price">
-												<a href="#" class="getCustom_link">
+												<a class="getCustom_link" data-bs-toggle="modal" data-bs-target="#getCustom_toggle">
 													Get customized price
 												</a>
 											</div>
@@ -1543,9 +1590,9 @@
 							<div class="quantity_left">
 								<span class="quantity_heading">Update Quantity</span>
 								<div class="update_quantity">
-									<button type="button" class="minus_btn"> - </button>
-									<input type="text" value="1" class="qunatity_input">
-									<button type="button" class="plus_btn"> + </button>
+									<button type="button" class="minus_btn" (click)="decrement()"> - </button>
+									<input type="text" [value]="count" class="qunatity_input">
+									<button type="button" class="plus_btn" (click)="increment()"> + </button>
 								</div>
 							</div>
 							<div class="quantity_right">
@@ -1588,7 +1635,7 @@
 										</div>
 									</div>
 									<div class="getCutom_price">
-										<a href="#" class="getCustom_link">
+										<a class="getCustom_link" data-bs-toggle="modal" data-bs-target="#getCustom_toggle">
 											Get customized price
 										</a>
 									</div>
@@ -1633,6 +1680,58 @@
 			</button>
 		</div>
 	</div>
+
+	<!-- get custom modal  -->
+
+	<div class="modal fade" id="getCustom_toggle" tabindex="-1" aria-labelledby="request_toggleLabel" aria-hidden="true">
+		<div class="modal-dialog getCustom_dialog">
+			<div class="modal-content">
+				<div class="modal-header getCustom_head">
+					<h5 class="modal-title getCustom_title" id="request_toggleLabel">
+						Enter your requirement details!
+					</h5>
+					<button type="button" class="btn-close call_back_close" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body getCusbodytom_body">
+					<form action="" class="getCustom_form">
+						
+						<div class="fieldRow">
+							<label for="name">Name*</label>
+							<input type="text" class="getCustom_input" placeholder="Name">
+						</div>
+						<div class="fieldRow">
+							<label for="email">Email*</label>
+							<input type="text" class="getCustom_input" placeholder="Email">
+						</div>
+						<div class="fieldRow">
+							<label for="phone">Phone*</label>
+							<input type="text" class="getCustom_input" placeholder="Phone">
+						</div>
+						<div class="fieldRow">
+							<label for="pin">PinCode*</label>
+							<input type="text" class="getCustom_input" placeholder="PinCode">
+						</div>
+						<div class="fieldRow">
+							<label for="pin">PinCode*</label>
+							<div class="update_quantity_pop">
+								<button type="button" class="getCusminus_btn" (click)="decrement()"> - </button>
+								<input type="text" [value]="count" class="getCus_pop_input">
+								<button type="button" class="getCusplus_btn" (click)="increment()"> + </button>
+							</div>
+						</div>
+						<div class="fieldRow">
+							<label for="price">Expected Price*</label>
+							<input type="text" class="getCustom_input" placeholder="Expected Price">
+						</div>
+						
+						<button type="submit" class="getCustom_btn">Submit Requirment</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </section>
 
 

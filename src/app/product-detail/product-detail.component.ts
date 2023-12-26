@@ -11,6 +11,8 @@ export class ProductDetailComponent {
   mainImgSrc: string = '../../assets/img/img1.webp'
   current : number | null = null;
   emailPopupActive : boolean = false
+  count : number = 1;
+
 
   updateMainImg(newSrc:string,index:number) : void{
     console.log("change" , newSrc, "and index no is" , index);
@@ -39,6 +41,23 @@ export class ProductDetailComponent {
   }
   emailPopupCloseToggle(){
     this.emailPopupActive = false
+  }
+
+  increment(){
+    this.count++;
+  }
+  decrement(){
+    if(this.count > 0){
+      this.count--;
+    }
+  }
+
+  scrollTO(section :string):void{
+    const element = document.getElementById(section)
+    
+    if(element){
+      element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'})
+    }
   }
 
 }

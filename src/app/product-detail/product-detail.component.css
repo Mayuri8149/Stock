@@ -154,7 +154,7 @@
 .bulkQuantity_discount{
     border-top: 1px solid #eee !important;
     color: #444 !important;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 12px !important;
     padding: 10px 20px !important;
     background: #f2f2f2 !important;
@@ -185,6 +185,7 @@
     color: #046699;
     font-size: 13px;
     font-weight: 500;
+    cursor: pointer;
 }
 .getCustom_link:hover{
     color: #444;
@@ -237,7 +238,7 @@
     height: 20px;
     display: inline-block;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 22px;
     font-size: 13px;
     margin-right: 5px;
@@ -270,7 +271,7 @@
     height: 25px;
     display: inline-block;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 25px;
     font-size: 13px;
     margin-right: 5px;
@@ -400,7 +401,7 @@
 .pdp_by{
     color: #a1a1a1;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     display: inline-block;
     text-transform: uppercase;
     margin: 0 0 23px;
@@ -436,13 +437,14 @@
 }
 .emi_discount b{
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     color: #444;
 }
 .emi_anchor a{
     text-decoration: underline;
     color: #046699;
     font-size: 13px;
+    cursor: pointer;
 }
 .earn_upto_star{
     display: flex;
@@ -460,7 +462,7 @@
 }
 .ibcoins_wrp b{
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     color: #444;
 }
 .ibCoins_i{
@@ -475,7 +477,7 @@
     width: 16px;
     height: 16px;
     margin-left: 7px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
 }
 .seprate_line{
@@ -523,6 +525,7 @@
     border: 1px solid #ddd;
     text-transform: uppercase;
     font-weight: 600;
+    cursor: pointer;
 }
 .product_more{
     width: 100%;
@@ -554,7 +557,7 @@
     color: #444;
     font-size: 14px;
     line-height: 18px;
-    font-weight: 700;
+    font-weight: 600;
 }
 .pincode_area{
     position: relative;
@@ -586,7 +589,7 @@
     color: #212121;
     margin: 11px 0 10px;
     line-height: 18px;
-    font-weight: 700;
+    font-weight: 600;
 }
 .noCost_emi{
     font-size: 12px;
@@ -658,6 +661,7 @@
     margin: 0 0 0 3px;
     color: #046699;
     text-decoration: underline;
+    cursor: pointer;
 }
 .product_waranty_garenty{
     width: 100%;
@@ -858,7 +862,7 @@
     display: inline-block;
     color: #262626;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
 }
 .reviewRate_star_box{
     display: flex;
@@ -960,7 +964,7 @@
     padding: 15px 0;
     font-size: 15px;
     text-transform: capitalize;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .pdp_reviewBox{
@@ -1232,6 +1236,130 @@
         margin: 3px;
         border-radius: 9px;
 }
+
+/* ============= request callback ===========  */
+
+.req_call_dailog{
+    max-width: 440px;
+}
+
+.call_back_close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: 2px solid #bababa;
+    border-radius: 100%;
+}
+
+.req_call_title{
+    text-align: center;
+    font-size: 17px;
+}
+
+.call_back_form{
+    text-align: center;
+}
+
+.req_call_head{
+    justify-content: center;
+    color: #444 !important;
+}
+
+.req_call_body{
+    background-color: #f0f0f0;
+    padding-top: 30px;
+}
+
+.call_back_input{
+    border: 1px solid #cccccc;
+    line-height: 24px;
+    color: #1d1d1d;
+    font-size: 16px;
+    padding: 5px;
+    width: 338px;
+    height: 43px;
+    margin: 5px 0;
+}
+
+.call_back_btn{
+    width: 338px;
+    height: 42px;
+    background-color: #f4a137;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.call_back_footer{
+    justify-content: center;
+}
+.call_back_footer a{
+    color: #046699;
+}
+
+/* ============= getcustom modal ===========  */
+
+.getCustom_head{
+    justify-content: center;
+}
+.getCusbodytom_body{
+    background-color: #f0f0f0;
+}
+.getCustom_form{
+    text-align: center;
+}
+.fieldRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 338px;
+    margin-inline: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.fieldRow label{
+    width: 50%;
+    text-align: justify;
+}
+.getCustom_input{
+    border: 1px solid #cccccc;
+    line-height: 24px;
+    color: #1d1d1d;
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+    height: 43px;
+    margin: 5px 0;
+}
+.getCustom_btn{
+    width: 338px;
+    height: 42px;
+    background-color: #f4a137;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.update_quantity_pop{
+    border: 1px solid #e4e4e4;
+    width: 338px;
+}
+.getCus_pop_input{
+    border-left: 1px solid #ddd !important;
+    border-right: 1px solid #ddd !important;
+}
+.update_quantity_pop .getCusminus_btn,.getCusplus_btn,.getCus_pop_input{
+    width: 50px;
+    height: 43px;
+    border: 0;
+    text-align: center;
+    background-color: #fff;
+}
+
 
 /* ==================== productDetails ===============  */
 @media (max-width:1024px) {
