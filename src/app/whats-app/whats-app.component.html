@@ -1,0 +1,29 @@
+
+ <!-- =================== Wp icon =======================  -->
+ <div class="whatsappIcon" (click)="whatsAppToggle()">
+    <a><span><img src="../assets/img/whatsappIcon.png" alt=""></span></a>
+</div>
+<!-- ================== whatsapp modal ======================  -->
+
+<div class="whatsAppBox" [ngClass]="{'active' : whatsAppactive}">
+    <div class="whasAppHeading">
+        <div class="whatappDivLogo">
+            <img src="../assets/img/allCatModal/logo.png" alt="">
+            <span></span>
+        </div>
+        <div class="whatappDivLogo">
+            <div>Welcome To Industry Buying</div>
+            <div>Scan the QR code</div>
+        </div>
+    </div>
+    <div class="whatsAppScanner">
+        <div class="qrCode">
+            <!-- <canvas width="200" height="200"></canvas> -->
+            <img src="../assets/img/demoQR.png" class="qrImage" alt="">
+        </div>
+        <br>
+        <span>OR</span>
+        <br>
+        Click to Chat with a Specialist
+    </div>
+</div>

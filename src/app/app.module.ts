@@ -9,6 +9,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { WhatsAppComponent } from './whats-app/whats-app.component';
+import { FeedbackFromComponent } from './feedback-from/feedback-from.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     SidebarComponent,
     ProductDetailComponent,
-    HomeComponent
+    HomeComponent,
+    WhatsAppComponent,
+    FeedbackFromComponent
   ],
   imports: [
     BrowserModule,
