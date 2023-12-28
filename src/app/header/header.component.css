@@ -340,3 +340,21 @@ p {
     overflow-y: scroll;
 }
 
+.short_text{
+    position: relative;
+}
+.pdp_sidebar{
+    position: absolute;
+    width: 300px;
+    top: 100%;
+    /* top: 0; */
+    left: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.pdp_sidebar{
+    display: none;
+    padding-top: 20px;
+}
+.short_text:hover .pdp_sidebar{
+    display: block;
+}
