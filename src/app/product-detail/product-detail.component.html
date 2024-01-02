@@ -6,6 +6,22 @@
 
 			<div class="col-lg-9 col-sm-12 col-md-12 left_side_mobileWrapper">
 				<div class="productDetails_leftArea">
+					<div class="sticky_active" [ngClass]="{'active' : stickyHeaderActive}">
+						<div class="sticky_headerPDP">
+							<div class="sticky_headImg">
+							<img src="../../assets/img/productDetailImg/AGRCUL1.webp" alt="">
+						</div>
+						<div class="sticky_headContent">
+							<div>Agripro Power Cultivator 7 HP Gear Transmission APC100FQ</div>
+							<h2 class="pdp_by">by <a href="#">AgriPro</a></h2>
+						</div>
+						<div class="sticky_header_link">
+							<a id="dec" (click)="scrollTO('dscription-tab');setActive('dec')">Description</a>
+							<a id="pro" (click)="scrollToSpecification();setActive('pro')">Product Specifications</a>
+							<a id="qui" (click)="scrollTO('recommend_id');setActive('qui')">Quick Links</a>
+						</div>
+					</div>
+					</div>
 					<div class="productDetail_top">
 						<div class="breadCrums_common">
 							<nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
@@ -85,37 +101,43 @@
 								<ul class="small_tumb_img">
 									<li class="small_img_li" [class.current]="isImageActiveClass(1)">
 										<a>
-											<img src="../../assets/img/productDetailImg/AGRCUL1.webp" class="small_img" alt=""
+											<img src="../../assets/img/productDetailImg/AGRCUL1.webp" class="small_img"
+												alt=""
 												(click)="updateMainImg('../../assets/img/productDetailImg/AGRCUL1Big.webp',1)">
 										</a>
 									</li>
 									<li class="small_img_li" [class.current]="isImageActiveClass(2)">
 										<a>
-											<img src="../../assets/img/productDetailImg/AGRCUL2..webp" class="small_img" alt=""
+											<img src="../../assets/img/productDetailImg/AGRCUL2..webp" class="small_img"
+												alt=""
 												(click)="updateMainImg('../../assets/img/productDetailImg/AGRCUL2Big.webp',2)">
 										</a>
 									</li>
 									<li class="small_img_li" [class.current]="isImageActiveClass(3)">
 										<a>
-											<img src="../../assets/img/productDetailImg/AGRCUL3.webp" class="small_img" alt=""
+											<img src="../../assets/img/productDetailImg/AGRCUL3.webp" class="small_img"
+												alt=""
 												(click)="updateMainImg('../../assets/img/productDetailImg/AGRCUL3Big.webp',3)">
 										</a>
 									</li>
 									<li class="small_img_li" [class.current]="isImageActiveClass(4)">
 										<a>
-											<img src="../../assets/img/productDetailImg/AGRCUL4.webp" class="small_img" alt=""
+											<img src="../../assets/img/productDetailImg/AGRCUL4.webp" class="small_img"
+												alt=""
 												(click)="updateMainImg('../../assets/img/productDetailImg/AGRCUL4Big.webp',4)">
 										</a>
 									</li>
 									<li class="small_img_li" [class.current]="isImageActiveClass(5)">
 										<a>
-											<img src="../../assets/img/productDetailImg/AGRCUL5.webp" class="small_img" alt=""
+											<img src="../../assets/img/productDetailImg/AGRCUL5.webp" class="small_img"
+												alt=""
 												(click)="updateMainImg('../../assets/img/productDetailImg/AGRCUL5Big.webp',5)">
 										</a>
 									</li>
 									<li class="small_img_li">
 										<a>
-											<img src="../../assets/img/productDetailImg/AGRCUL6.jpg" class="small_img" alt="">
+											<img src="../../assets/img/productDetailImg/AGRCUL6.jpg" class="small_img"
+												alt="">
 										</a>
 									</li>
 								</ul>
@@ -219,7 +241,8 @@
 											</tr>
 											<tr>
 												<td style="width: 150px;">
-													<a class="more_details_btn" (click)="scrollTO('specification-tab')">More
+													<a class="more_details_btn"
+													(click)="scrollToSpecification()">More
 														Details</a>
 												</td>
 											</tr>
@@ -243,7 +266,8 @@
 								</div>
 								<div class="pincode_area">
 									<form action="">
-										<input type="text" class="pincode_input" placeholder="Enter Your Pincode" maxlength="6">
+										<input type="text" class="pincode_input" placeholder="Enter Your Pincode"
+											maxlength="6">
 										<button type="submit" class="checkBtn">Check</button>
 									</form>
 								</div>
@@ -271,21 +295,23 @@
 											<div class="modal-body">
 												<div class="row">
 													<div class="col-md-4 viewPlans_left">
-														<div class="nav flex-column nav-pills viewPlans_pills me-3" id="v-pills-tab"
-															role="tablist" aria-orientation="vertical">
-															<button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-																data-bs-target="#v-pills-home" type="button" role="tab"
-																aria-controls="v-pills-home" aria-selected="true">Credit Card</button>
-															<button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
-																data-bs-target="#v-pills-profile" type="button" role="tab"
-																aria-controls="v-pills-profile" aria-selected="false">Debit
+														<div class="nav flex-column nav-pills viewPlans_pills me-3"
+															id="v-pills-tab" role="tablist" aria-orientation="vertical">
+															<button class="nav-link active" id="v-pills-home-tab"
+																data-bs-toggle="pill" data-bs-target="#v-pills-home"
+																type="button" role="tab" aria-controls="v-pills-home"
+																aria-selected="true">Credit Card</button>
+															<button class="nav-link" id="v-pills-profile-tab"
+																data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+																type="button" role="tab" aria-controls="v-pills-profile"
+																aria-selected="false">Debit
 																Card</button>
 														</div>
 													</div>
 													<div class="col-md-8 viewPlans_right">
 														<div class="tab-content" id="v-pills-tabContent">
-															<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-																aria-labelledby="v-pills-home-tab">
+															<div class="tab-pane fade show active" id="v-pills-home"
+																role="tabpanel" aria-labelledby="v-pills-home-tab">
 																<ul class="viewBank_list">
 																	<li>IDBI</li>
 																	<li>HDFC</li>
@@ -302,8 +328,8 @@
 																	<li>ICICI</li>
 																</ul>
 															</div>
-															<div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-																aria-labelledby="v-pills-profile-tab">
+															<div class="tab-pane fade" id="v-pills-profile"
+																role="tabpanel" aria-labelledby="v-pills-profile-tab">
 																<ul class="viewBank_list">
 																	<li>IDBI</li>
 																	<li>HDFC</li>
@@ -344,11 +370,35 @@
 								<div class="rga_content">
 									<div class="generate_quote">
 										<i class="fa-solid fa-file"></i>
-										<a href="#" class="quote_anch">Generate Quote</a>
+										<a data-bs-toggle="modal" data-bs-target="#exampleModal"
+											class="quote_anch">Generate Quote</a>
+
+										<!-- generate modal -->
+										<div class="modal fade" id="exampleModal" tabindex="-1"
+											aria-labelledby="exampleModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered generate_quoteAlert_dailog">
+												<div class="modal-content">
+													<!-- <div class="modal-body"> -->
+													<div class="alert generate_quoteAlert mb-0" role="alert">
+														<div>
+															<i class="fa-solid fa-check quote_check"></i>
+															Your item has been added to quotation
+															<a class="alert-link">View Quotation</a>
+														</div>
+															<i class="fa-solid fa-xmark generate_quoteAlert_close"
+															 data-bs-dismiss="modal"
+															aria-label="Close"></i>
+													</div>
+													<!-- </div> -->
+												</div>
+											</div>
+
+										</div>
 									</div>
 									<div class="req_callback">
 										<i class="fa-solid fa-phone"></i>
-										<a class="callback_anch" data-bs-toggle="modal" data-bs-target="#request_toggle">Request
+										<a class="callback_anch" data-bs-toggle="modal"
+											data-bs-target="#request_toggle">Request
 											Callback</a>
 
 										<!-- modal  -->
@@ -367,10 +417,14 @@
 													</div>
 													<div class="modal-body req_call_body">
 														<form action="" class="call_back_form">
-															<input type="text" class="call_back_input" placeholder="Name">
-															<input type="text" class="call_back_input" placeholder="Email">
-															<input type="text" class="call_back_input" placeholder="GSTN NO">
-															<input type="text" class="call_back_input" placeholder="Phone">
+															<input type="text" class="call_back_input"
+																placeholder="Name">
+															<input type="text" class="call_back_input"
+																placeholder="Email">
+															<input type="text" class="call_back_input"
+																placeholder="GSTN NO">
+															<input type="text" class="call_back_input"
+																placeholder="Phone">
 															<select name="" id="" class="call_back_input">
 																<option value="">Select</option>
 																<option value="">Maharastra</option>
@@ -449,8 +503,8 @@
 										<div class="accordion-item">
 											<h2 class="accordion-header" id="headingOne">
 												<button class="accordion-button bulkQuantity_discount" type="button"
-													data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-													aria-controls="collapseOne">
+													data-bs-toggle="collapse" data-bs-target="#collapseOne"
+													aria-expanded="true" aria-controls="collapseOne">
 													Bulk quantity Discounts!!
 												</button>
 											</h2>
@@ -478,15 +532,17 @@
 												</div>
 											</div>
 											<div class="getCutom_price">
-												<a class="getCustom_link" data-bs-toggle="modal" data-bs-target="#getCustom_toggle">
+												<a class="getCustom_link" data-bs-toggle="modal"
+													data-bs-target="#getCustom_toggle">
 													Get customized price
 												</a>
 											</div>
 											<div class="buttonWrap">
 												<button type="button" class="product_addToBtn">ADD TO CART</button>
 												<div class="high_Value_info">
-													<textarea class="high_val_ph" wrap="hard" name="Phone" id="high_Value_phone"
-														cols="50" rows="2" maxlength="10" minlength="10"
+													<textarea class="high_val_ph" wrap="hard" name="Phone"
+														id="high_Value_phone" cols="50" rows="2" maxlength="10"
+														minlength="10"
 														placeholder="Enter Phone Number to Connect Product Expert"></textarea>
 													<button type="button" class="call_now">
 														<i class="fa fa-phone" aria-hidden="true"></i>
@@ -562,9 +618,9 @@
 									DESCRIPTION
 								</button>
 
-								<button class="nav-link desc_spec" id="specification-tab" data-bs-toggle="tab"
-									data-bs-target="#specification" type="button" role="tab" aria-controls="specification"
-									aria-selected="false">
+								<button #specificationTab class="nav-link desc_spec" id="specification-tab" data-bs-toggle="tab"
+									data-bs-target="#specification" type="button" role="tab"
+									aria-controls="specification" aria-selected="false">
 									SPECIFICATION
 								</button>
 
@@ -623,7 +679,8 @@
 
 								</div>
 							</div>
-							<div class="tab-pane fade" id="specification" role="tabpanel" aria-labelledby="specification-tab">
+							<div class="tab-pane fade" id="specification" role="tabpanel"
+								aria-labelledby="specification-tab">
 								<div class="tabDwtails_container">
 									<table class="table">
 										<tbody class="specific_table">
@@ -730,7 +787,7 @@
 
 						</div>
 					</section>
-					<section class="recommend_area">
+					<section class="recommend_area" id="recommend_id">
 						<h5 class="recommend_heading">Recommended Items</h5>
 						<div class="recomendedImg_wrapper">
 							<div class="recommended_card">
@@ -980,8 +1037,8 @@
 							<nav>
 								<div class="nav nav-tabs" id="nav-tab" role="tablist">
 									<button class="nav-link active desc_spec" id="most_recent-tab" data-bs-toggle="tab"
-										data-bs-target="#most_recent" type="button" role="tab" aria-controls="most_recent"
-										aria-selected="true">
+										data-bs-target="#most_recent" type="button" role="tab"
+										aria-controls="most_recent" aria-selected="true">
 										MOST RECENT
 									</button>
 
@@ -1022,57 +1079,24 @@
 												</div>
 												<div class="client_star">
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/blank-star.png" alt="">
-													</a>
-													<span class="client_review_sum">Excellent product </span>
-												</div>
-											</div>
-										</div>
-										<span class="review_date">2022-02-06 00:00:00</span>
-										<div class="client_review_para">
-											<p>So far, the work has been excellent. The AgriPro Power Cultivator 7
-												HP Gear Transmission is perhaps the finest.</p>
-										</div>
-									</div>
-									<div class="pdp_reviewBox">
-										<div class="pdp_flex">
-											<div class="short_name">
-												<span>J</span>
-											</div>
-											<div class="name_rate_flex">
-												<div class="full_name_review">
-													<span class="client_name">
-														BY Jaggi
-													</span>
-													<span class="verified_client">Verified Buyer</span>
-												</div>
-												<div class="client_star">
-													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
-													</a>
-													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
-													</a>
-													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
-													</a>
-													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
-													</a>
-													<a href="#">
-														<img src="../../assets/img/productDetailImg/blank-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/blank-star.png"
+															alt="">
 													</a>
 													<span class="client_review_sum">Excellent product </span>
 												</div>
@@ -1098,19 +1122,24 @@
 												</div>
 												<div class="client_star">
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/blank-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/blank-star.png"
+															alt="">
 													</a>
 													<span class="client_review_sum">Excellent product </span>
 												</div>
@@ -1136,19 +1165,67 @@
 												</div>
 												<div class="client_star">
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/blank-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/blank-star.png"
+															alt="">
+													</a>
+													<span class="client_review_sum">Excellent product </span>
+												</div>
+											</div>
+										</div>
+										<span class="review_date">2022-02-06 00:00:00</span>
+										<div class="client_review_para">
+											<p>So far, the work has been excellent. The AgriPro Power Cultivator 7
+												HP Gear Transmission is perhaps the finest.</p>
+										</div>
+									</div>
+									<div class="pdp_reviewBox">
+										<div class="pdp_flex">
+											<div class="short_name">
+												<span>J</span>
+											</div>
+											<div class="name_rate_flex">
+												<div class="full_name_review">
+													<span class="client_name">
+														BY Jaggi
+													</span>
+													<span class="verified_client">Verified Buyer</span>
+												</div>
+												<div class="client_star">
+													<a href="#">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
+													</a>
+													<a href="#">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
+													</a>
+													<a href="#">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
+													</a>
+													<a href="#">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
+													</a>
+													<a href="#">
+														<img src="../../assets/img/productDetailImg/blank-star.png"
+															alt="">
 													</a>
 													<span class="client_review_sum">Excellent product </span>
 												</div>
@@ -1176,57 +1253,24 @@
 												</div>
 												<div class="client_star">
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/blank-star.png" alt="">
-													</a>
-													<span class="client_review_sum">Excellent product </span>
-												</div>
-											</div>
-										</div>
-										<span class="review_date">2022-02-06 00:00:00</span>
-										<div class="client_review_para">
-											<p>So far, the work has been excellent. The AgriPro Power Cultivator 7
-												HP Gear Transmission is perhaps the finest.</p>
-										</div>
-									</div>
-									<div class="pdp_reviewBox">
-										<div class="pdp_flex">
-											<div class="short_name">
-												<span>J</span>
-											</div>
-											<div class="name_rate_flex">
-												<div class="full_name_review">
-													<span class="client_name">
-														BY Jaggi
-													</span>
-													<span class="verified_client">Verified Buyer</span>
-												</div>
-												<div class="client_star">
-													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
-													</a>
-													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
-													</a>
-													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
-													</a>
-													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
-													</a>
-													<a href="#">
-														<img src="../../assets/img/productDetailImg/blank-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/blank-star.png"
+															alt="">
 													</a>
 													<span class="client_review_sum">Excellent product </span>
 												</div>
@@ -1252,19 +1296,24 @@
 												</div>
 												<div class="client_star">
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/blank-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/blank-star.png"
+															alt="">
 													</a>
 													<span class="client_review_sum">Excellent product </span>
 												</div>
@@ -1290,19 +1339,67 @@
 												</div>
 												<div class="client_star">
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/blank-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/blank-star.png"
+															alt="">
+													</a>
+													<span class="client_review_sum">Excellent product </span>
+												</div>
+											</div>
+										</div>
+										<span class="review_date">2022-02-06 00:00:00</span>
+										<div class="client_review_para">
+											<p>So far, the work has been excellent. The AgriPro Power Cultivator 7
+												HP Gear Transmission is perhaps the finest.</p>
+										</div>
+									</div>
+									<div class="pdp_reviewBox">
+										<div class="pdp_flex">
+											<div class="short_name">
+												<span>J</span>
+											</div>
+											<div class="name_rate_flex">
+												<div class="full_name_review">
+													<span class="client_name">
+														BY Jaggi
+													</span>
+													<span class="verified_client">Verified Buyer</span>
+												</div>
+												<div class="client_star">
+													<a href="#">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
+													</a>
+													<a href="#">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
+													</a>
+													<a href="#">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
+													</a>
+													<a href="#">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
+													</a>
+													<a href="#">
+														<img src="../../assets/img/productDetailImg/blank-star.png"
+															alt="">
 													</a>
 													<span class="client_review_sum">Excellent product </span>
 												</div>
@@ -1330,57 +1427,24 @@
 												</div>
 												<div class="client_star">
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/blank-star.png" alt="">
-													</a>
-													<span class="client_review_sum">Excellent product </span>
-												</div>
-											</div>
-										</div>
-										<span class="review_date">2022-02-06 00:00:00</span>
-										<div class="client_review_para">
-											<p>So far, the work has been excellent. The AgriPro Power Cultivator 7
-												HP Gear Transmission is perhaps the finest.</p>
-										</div>
-									</div>
-									<div class="pdp_reviewBox">
-										<div class="pdp_flex">
-											<div class="short_name">
-												<span>J</span>
-											</div>
-											<div class="name_rate_flex">
-												<div class="full_name_review">
-													<span class="client_name">
-														BY Jaggi
-													</span>
-													<span class="verified_client">Verified Buyer</span>
-												</div>
-												<div class="client_star">
-													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
-													</a>
-													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
-													</a>
-													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
-													</a>
-													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
-													</a>
-													<a href="#">
-														<img src="../../assets/img/productDetailImg/blank-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/blank-star.png"
+															alt="">
 													</a>
 													<span class="client_review_sum">Excellent product </span>
 												</div>
@@ -1406,19 +1470,67 @@
 												</div>
 												<div class="client_star">
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/blank-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/blank-star.png"
+															alt="">
+													</a>
+													<span class="client_review_sum">Excellent product </span>
+												</div>
+											</div>
+										</div>
+										<span class="review_date">2022-02-06 00:00:00</span>
+										<div class="client_review_para">
+											<p>So far, the work has been excellent. The AgriPro Power Cultivator 7
+												HP Gear Transmission is perhaps the finest.</p>
+										</div>
+									</div>
+									<div class="pdp_reviewBox">
+										<div class="pdp_flex">
+											<div class="short_name">
+												<span>J</span>
+											</div>
+											<div class="name_rate_flex">
+												<div class="full_name_review">
+													<span class="client_name">
+														BY Jaggi
+													</span>
+													<span class="verified_client">Verified Buyer</span>
+												</div>
+												<div class="client_star">
+													<a href="#">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
+													</a>
+													<a href="#">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
+													</a>
+													<a href="#">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
+													</a>
+													<a href="#">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
+													</a>
+													<a href="#">
+														<img src="../../assets/img/productDetailImg/blank-star.png"
+															alt="">
 													</a>
 													<span class="client_review_sum">Excellent product </span>
 												</div>
@@ -1431,7 +1543,8 @@
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="certified" role="tabpanel" aria-labelledby="certified-tab">
+								<div class="tab-pane fade" id="certified" role="tabpanel"
+									aria-labelledby="certified-tab">
 									<div class="pdp_reviewBox">
 										<div class="pdp_flex">
 											<div class="short_name">
@@ -1446,19 +1559,24 @@
 												</div>
 												<div class="client_star">
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/blank-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/blank-star.png"
+															alt="">
 													</a>
 													<span class="client_review_sum">Excellent product </span>
 												</div>
@@ -1484,19 +1602,24 @@
 												</div>
 												<div class="client_star">
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/blank-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/blank-star.png"
+															alt="">
 													</a>
 													<span class="client_review_sum">Excellent product </span>
 												</div>
@@ -1522,19 +1645,24 @@
 												</div>
 												<div class="client_star">
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/full-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/full-star.png"
+															alt="">
 													</a>
 													<a href="#">
-														<img src="../../assets/img/productDetailImg/blank-star.png" alt="">
+														<img src="../../assets/img/productDetailImg/blank-star.png"
+															alt="">
 													</a>
 													<span class="client_review_sum">Excellent product </span>
 												</div>
@@ -1611,8 +1739,8 @@
 											Bulk quantity Discounts!!
 										</button>
 									</h2>
-									<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-										data-bs-parent="#accordionExample">
+									<div id="collapseOne" class="accordion-collapse collapse show"
+										aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 										<div class="accordion-body p-0">
 											<table class="table mb-0">
 												<thead>
@@ -1635,15 +1763,16 @@
 										</div>
 									</div>
 									<div class="getCutom_price">
-										<a class="getCustom_link" data-bs-toggle="modal" data-bs-target="#getCustom_toggle">
+										<a class="getCustom_link" data-bs-toggle="modal"
+											data-bs-target="#getCustom_toggle">
 											Get customized price
 										</a>
 									</div>
 									<div class="buttonWrap">
 										<button type="button" class="product_addToBtn">ADD TO CART</button>
 										<div class="high_Value_info">
-											<textarea class="high_val_ph" wrap="hard" name="Phone" id="high_Value_phone" cols="50"
-												rows="2" maxlength="10" minlength="10"
+											<textarea class="high_val_ph" wrap="hard" name="Phone" id="high_Value_phone"
+												cols="50" rows="2" maxlength="10" minlength="10"
 												placeholder="Enter Phone Number to Connect Product Expert"></textarea>
 											<button type="button" class="call_now">
 												<i class="fa fa-phone" aria-hidden="true"></i>
@@ -1683,7 +1812,8 @@
 
 	<!-- get custom modal  -->
 
-	<div class="modal fade" id="getCustom_toggle" tabindex="-1" aria-labelledby="request_toggleLabel" aria-hidden="true">
+	<div class="modal fade" id="getCustom_toggle" tabindex="-1" aria-labelledby="request_toggleLabel"
+		aria-hidden="true">
 		<div class="modal-dialog getCustom_dialog">
 			<div class="modal-content">
 				<div class="modal-header getCustom_head">
@@ -1695,7 +1825,7 @@
 				</div>
 				<div class="modal-body getCusbodytom_body">
 					<form action="" class="getCustom_form">
-						
+
 						<div class="fieldRow">
 							<label for="name">Name*</label>
 							<input type="text" class="getCustom_input" placeholder="Name">
@@ -1724,7 +1854,7 @@
 							<label for="price">Expected Price*</label>
 							<input type="text" class="getCustom_input" placeholder="Expected Price">
 						</div>
-						
+
 						<button type="submit" class="getCustom_btn">Submit Requirment</button>
 					</form>
 				</div>
@@ -1739,6 +1869,7 @@
 	<app-footer></app-footer>
 </div>
 
+<app-back-to-top-button></app-back-to-top-button>
 
 <app-whats-app></app-whats-app>
 

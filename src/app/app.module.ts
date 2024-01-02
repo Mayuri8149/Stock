@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { WhatsAppComponent } from './whats-app/whats-app.component';
 import { FeedbackFromComponent } from './feedback-from/feedback-from.component';
+import { BackToTopButtonComponent } from './back-to-top-button/back-to-top-button.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FeedbackFromComponent } from './feedback-from/feedback-from.component';
     ProductDetailComponent,
     HomeComponent,
     WhatsAppComponent,
-    FeedbackFromComponent
+    FeedbackFromComponent,
+    BackToTopButtonComponent
   ],
   imports: [
     BrowserModule,
