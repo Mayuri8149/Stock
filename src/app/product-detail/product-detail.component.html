@@ -9,18 +9,19 @@
 					<div class="sticky_active" [ngClass]="{'active' : stickyHeaderActive}">
 						<div class="sticky_headerPDP">
 							<div class="sticky_headImg">
-							<img src="../../assets/img/productDetailImg/AGRCUL1.webp" alt="">
+								<img src="../../assets/img/productDetailImg/AGRCUL1.webp" alt="">
+							</div>
+							<div class="sticky_headContent">
+								<div>Agripro Power Cultivator 7 HP Gear Transmission APC100FQ</div>
+								<h2 class="pdp_by">by <a href="#">AgriPro</a></h2>
+							</div>
+							<div class="sticky_header_link">
+								<a id="dec" (click)="scrollTO('dscription-tab');setActive('dec')">Description</a>
+								<a id="pro" (click)="scrollToSpecification();setActive('pro')">Product
+									Specifications</a>
+								<a id="qui" (click)="scrollTO('recommend_id');setActive('qui')">Quick Links</a>
+							</div>
 						</div>
-						<div class="sticky_headContent">
-							<div>Agripro Power Cultivator 7 HP Gear Transmission APC100FQ</div>
-							<h2 class="pdp_by">by <a href="#">AgriPro</a></h2>
-						</div>
-						<div class="sticky_header_link">
-							<a id="dec" (click)="scrollTO('dscription-tab');setActive('dec')">Description</a>
-							<a id="pro" (click)="scrollToSpecification();setActive('pro')">Product Specifications</a>
-							<a id="qui" (click)="scrollTO('recommend_id');setActive('qui')">Quick Links</a>
-						</div>
-					</div>
 					</div>
 					<div class="productDetail_top">
 						<div class="breadCrums_common">
@@ -241,8 +242,7 @@
 											</tr>
 											<tr>
 												<td style="width: 150px;">
-													<a class="more_details_btn"
-													(click)="scrollToSpecification()">More
+													<a class="more_details_btn" (click)="scrollToSpecification()">More
 														Details</a>
 												</td>
 											</tr>
@@ -363,7 +363,133 @@
 									</div>
 								</div>
 								<div class="view_div">
-									<a href="#" class="view">View all Offers</a>
+									<a class="view" data-bs-toggle="modal" data-bs-target="#viewAllOffer">View all Offers</a>
+									<!-- offer modal  -->
+									<div class="modal fade" id="viewAllOffer" tabindex="-1"
+										aria-labelledby="viewAllOfferLabel" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-scrollable viewall_offerDialogue">
+											<div class="modal-content viewall_offercontent">
+												<div class="modal-header view_all_header">
+													<h5 class="modal-title" id="viewAllOfferLabel">OFFERS</h5>
+													<i class="fa-solid fa-xmark viewAll_offers_close"
+															data-bs-dismiss="modal" aria-label="Close"></i>
+												</div>
+												<div class="modal-body view_all_body">
+													<div class="gst_offer">
+														<p class="gst_para">Get GST invoice and save up to 28% on Business Purchases.</p>
+														<div class="gst_view_more">
+															<p class="gst_view_btn">View More</p>
+														</div>
+													</div>
+													<div class="viewall_couponArea">
+														<div class="coupon_details">
+															<div class="curveTop"></div>
+															<div class="curveBottom"></div>
+															<img class="scissorImg" src="../../assets/img/productDetailImg/scissor.svg" alt="">
+															<div class="couponCode_area">
+																<div class="coupon_use">Use Coupon Code</div>
+																<div class="redeemCode">PI1500</div>
+															</div>
+															<div class="couponCode_content">
+																Get up to ₹1500* on a min. order value of ₹4999
+																<a href="javascript:void(0);">T&C Apply</a>
+															</div>
+														</div>
+													</div>
+													<div class="viewall_couponArea">
+														<div class="coupon_details">
+															<div class="curveTop"></div>
+															<div class="curveBottom"></div>
+															<img class="scissorImg" src="../../assets/img/productDetailImg/scissor.svg" alt="">
+															<div class="couponCode_area">
+																<div class="coupon_use">Use Coupon Code</div>
+																<div class="redeemCode">PI1500</div>
+															</div>
+															<div class="couponCode_content">
+																Get up to ₹1500* on a min. order value of ₹4999
+																<a href="javascript:void(0);">T&C Apply</a>
+															</div>
+														</div>
+													</div>
+													<div class="viewall_couponArea">
+														<div class="coupon_details">
+															<div class="curveTop"></div>
+															<div class="curveBottom"></div>
+															<img class="scissorImg" src="../../assets/img/productDetailImg/scissor.svg" alt="">
+															<div class="couponCode_area">
+																<div class="coupon_use">Use Coupon Code</div>
+																<div class="redeemCode">PI1500</div>
+															</div>
+															<div class="couponCode_content">
+																Get up to ₹1500* on a min. order value of ₹4999
+																<a href="javascript:void(0);">T&C Apply</a>
+															</div>
+														</div>
+													</div>
+													<div class="viewall_couponArea">
+														<div class="coupon_details">
+															<div class="curveTop"></div>
+															<div class="curveBottom"></div>
+															<img class="scissorImg" src="../../assets/img/productDetailImg/scissor.svg" alt="">
+															<div class="couponCode_area">
+																<div class="coupon_use">Use Coupon Code</div>
+																<div class="redeemCode">PI1500</div>
+															</div>
+															<div class="couponCode_content">
+																Get up to ₹1500* on a min. order value of ₹4999
+																<a href="javascript:void(0);">T&C Apply</a>
+															</div>
+														</div>
+													</div>
+													<div class="viewall_couponArea">
+														<div class="coupon_details">
+															<div class="curveTop"></div>
+															<div class="curveBottom"></div>
+															<img class="scissorImg" src="../../assets/img/productDetailImg/scissor.svg" alt="">
+															<div class="couponCode_area">
+																<div class="coupon_use">Use Coupon Code</div>
+																<div class="redeemCode">PI1500</div>
+															</div>
+															<div class="couponCode_content">
+																Get up to ₹1500* on a min. order value of ₹4999
+																<a href="javascript:void(0);">T&C Apply</a>
+															</div>
+														</div>
+													</div>
+													<div class="viewall_couponArea">
+														<div class="coupon_details">
+															<div class="curveTop"></div>
+															<div class="curveBottom"></div>
+															<img class="scissorImg" src="../../assets/img/productDetailImg/scissor.svg" alt="">
+															<div class="couponCode_area">
+																<div class="coupon_use">Use Coupon Code</div>
+																<div class="redeemCode">PI1500</div>
+															</div>
+															<div class="couponCode_content">
+																Get up to ₹1500* on a min. order value of ₹4999
+																<a href="javascript:void(0);">T&C Apply</a>
+															</div>
+														</div>
+													</div>
+													<div class="viewall_couponArea">
+														<div class="coupon_details">
+															<div class="curveTop"></div>
+															<div class="curveBottom"></div>
+															<img class="scissorImg" src="../../assets/img/productDetailImg/scissor.svg" alt="">
+															<div class="couponCode_area">
+																<div class="coupon_use">Use Coupon Code</div>
+																<div class="redeemCode">PI1500</div>
+															</div>
+															<div class="couponCode_content">
+																Get up to ₹1500* on a min. order value of ₹4999
+																<a href="javascript:void(0);">T&C Apply</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="rga_requirement">
@@ -385,9 +511,8 @@
 															Your item has been added to quotation
 															<a class="alert-link">View Quotation</a>
 														</div>
-															<i class="fa-solid fa-xmark generate_quoteAlert_close"
-															 data-bs-dismiss="modal"
-															aria-label="Close"></i>
+														<i class="fa-solid fa-xmark generate_quoteAlert_close"
+															data-bs-dismiss="modal" aria-label="Close"></i>
 													</div>
 													<!-- </div> -->
 												</div>
@@ -618,8 +743,8 @@
 									DESCRIPTION
 								</button>
 
-								<button #specificationTab class="nav-link desc_spec" id="specification-tab" data-bs-toggle="tab"
-									data-bs-target="#specification" type="button" role="tab"
+								<button #specificationTab class="nav-link desc_spec" id="specification-tab"
+									data-bs-toggle="tab" data-bs-target="#specification" type="button" role="tab"
 									aria-controls="specification" aria-selected="false">
 									SPECIFICATION
 								</button>

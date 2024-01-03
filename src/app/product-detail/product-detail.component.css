@@ -709,6 +709,7 @@
     color: #046699;
     text-decoration: underline;
     font-size: 12px;
+    cursor: pointer;
 }
 .rga_requirement{
     font-size: 12px;
@@ -1441,11 +1442,12 @@
     align-items: center;
     justify-content: space-between;
 }
-.generate_quoteAlert_close{
+.generate_quoteAlert_close,.viewAll_offers_close{
     color: white !important;
     font-size: 20px !important;
     cursor: pointer;
 }
+
 .generate_quoteAlert_dailog{
     max-width: 600px;
 }
@@ -1462,6 +1464,122 @@
     padding: 4px;
 }
 
+
+/* ============= view all offer modal ==================  */
+
+.viewall_offerDialogue{
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    /* margin-bottom: 0 !important; */
+}
+.viewall_offercontent{
+    max-height: 700px;
+}
+.view_all_header{
+    padding: 15px;
+    background: #00be9c;
+    color: #fff;
+    font-size: 22px;
+}
+.view_all_body{
+    text-align: initial;
+    background: #f3f3f3;
+    box-shadow: 0 0 13px rgba(0,0,0,.26);
+}
+
+.gst_offer{
+    background: #fffaef;
+    border: 1px dashed #e3daad;
+    margin-bottom: 21px;
+    padding: 14px 17px;
+    font-size: 14px;
+}
+.gst_para{
+    font-weight: 500;
+}
+.gst_view_btn{
+    font-size: 13px;
+    color: #046699;
+    text-decoration: underline;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.viewall_couponArea{
+    background: #fff;
+    margin-bottom: 21px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+.couponCode_area{
+    text-align: center;
+    width: 160px;
+    background: #fff;
+    padding: 14px 0 12px;
+    display: inline-block;
+    border-right: dashed 1px #a9a9a9;
+}
+.coupon_use{
+    font-size: 13px;
+    color: #999;
+}
+.redeemCode{
+    color: #19b615;
+    display: block;
+    font-size: 17px;
+    margin: 3px auto 0;
+    width: 126px;
+    padding-top: 5px;
+    border-radius: 100px;
+    background: #e6feca;
+    border: solid 1px #e4e4e4;
+    border-bottom: solid 2px #e4e4e4;
+}
+.couponCode_content{
+    background: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    color: #222;
+    width: 250px;
+    display: inline-block;
+    margin: 12px 0 0 17px;
+    vertical-align: top;
+}
+.couponCode_content a{
+    color: #999;
+    text-decoration: underline;
+    margin-top: 7px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.curveTop{
+    background: #f3f3f3;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    border-radius: 20px;
+    left: 151px;
+    top: -10px;
+    border-bottom: solid 1px #ccc;
+}
+.curveBottom{
+    background: #f3f3f3;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    border-radius: 20px;
+    left: 151px;
+    bottom: -10px;
+    border-top: solid 1px #ccc;
+}
+.scissorImg{
+    width: 13px;
+    height: 17px;
+    position: absolute;
+    bottom: 12px;
+    left: 153px;
+}
 
 
 /* ==================== productDetails ===============  */
