@@ -37,7 +37,7 @@ export class ProductDetailComponent {
 
 
   updateMainImg(newSrc:string,index:number) : void{
-    console.log("change" , newSrc, "and index no is" , index);
+    // console.log("change" , newSrc, "and index no is" , index);
     this.mainImgSrc = newSrc
     this.current = index
   }  
