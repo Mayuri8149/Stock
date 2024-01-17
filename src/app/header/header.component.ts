@@ -23,8 +23,17 @@ export class HeaderComponent {
         }
 
     })
-
   }
+
+  isMainPage(): boolean {
+    return this.router.url === '/product-detail';
+  }
+  
+  goToMainPage() {
+    // Navigate to the main page
+    this.router.navigateByUrl('/');
+  }
+
   updateHeaderClass() {
     const currentRoute = this.router.url;
     console.log(currentRoute);
@@ -43,16 +52,10 @@ export class HeaderComponent {
       this.headerClass = 'fixed-top';
     }
   }
+  
 
   ngOnInit(): void{
     console.log('------In product detail comp-----')
-     // Subscribe to route changes to check the current route
-    //  this.router.events.subscribe(() => {
-    //   this.showHeaderTop = this.route.snapshot.routeConfig?.path === 'product-detail';
-    //   // console.log(this.showHeaderTop);
-
-    // });
-    
   }
   
   onHamburgerClick(){

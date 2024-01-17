@@ -36,11 +36,15 @@
                 <!-- ========= hamberger icon for Mobile ============  -->
                 <button class="navbar-toggler hamburgerIcon" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    aria-label="Toggle navigation" *ngIf="!isMainPage()">
                     <span class="navbar-toggler-icon" (click)="onHamburgerClick()">
                         <i class="fa-solid fa-bars hamberger"></i>
                     </span>
                 </button>
+                 <!-- ========= product page back aroow btn for Mobile ============  -->
+                <div class="backButton" (click)="goToMainPage()">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
                 <div class="shortBy_category" *ngIf="showHeaderTop">
                     <div class="short_text">
                         Shop by Category

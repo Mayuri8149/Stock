@@ -81,3 +81,9 @@
     width: 180px;
     height: 200px;
 }
+
+@media (max-width : 768px) {
+    .whatsappIcon{
+        bottom: 18%;
+    }
+}

@@ -27,6 +27,7 @@
     text-decoration: none;
     font-weight: 700;
     position: relative;
+    font-weight: 500;
 }
 .offer_text span{
     color: #f0ffc8;
@@ -60,6 +61,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 .shortBy_category{
     margin-right: 20px;
@@ -357,4 +359,20 @@ p {
 }
 .short_text:hover .pdp_sidebar{
     display: block;
+}
+
+.backButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.backButton i{
+    font-size: 20px;
+    color: white;
+}
+
+@media (min-width:769px) {
+    .backButton{
+        display: none;
+    }
 }
