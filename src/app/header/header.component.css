@@ -355,7 +355,7 @@ p {
 }
 .pdp_sidebar{
     display: none;
-    padding-top: 20px;
+    padding-top: 14px;
 }
 .short_text:hover .pdp_sidebar{
     display: block;
