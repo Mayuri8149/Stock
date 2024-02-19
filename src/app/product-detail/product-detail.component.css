@@ -66,7 +66,8 @@
     font-weight: 500;
     color: #666;
 }
-.price strong{
+
+.price strong {
     font-weight: 500;
 }
 
@@ -214,10 +215,12 @@
     font-size: 11px;
     font-weight: 400;
 }
-.bulktable_heading th{
+
+.bulktable_heading th {
     color: #444;
     font-weight: 500;
 }
+
 .getCutom_price {
     padding: 5px 0 10px;
     text-align: center;
@@ -353,7 +356,7 @@
 .sticky_active {
     position: sticky;
     top: 0;
-    z-index: 99;
+    z-index: 9999;
     display: none;
 }
 
@@ -1537,6 +1540,7 @@ textarea {
 
 .req_call_dailog {
     max-width: 440px;
+    margin-top: 100px;
 }
 
 .call_back_close {
@@ -1711,6 +1715,7 @@ textarea {
     margin-right: 0 !important;
     margin-top: 0 !important;
     /* margin-bottom: 0 !important; */
+    max-width: 420px;
 }
 
 .viewall_offercontent {
@@ -1728,6 +1733,7 @@ textarea {
     text-align: initial;
     background: #f3f3f3;
     box-shadow: 0 0 13px rgba(0, 0, 0, .26);
+    padding: 10px !important;
 }
 
 .gst_offer {
@@ -1748,6 +1754,22 @@ textarea {
     text-decoration: underline;
     margin-top: 6px;
     cursor: pointer;
+}
+
+.offers_body p {
+    margin-top: 10px;
+    color: black;
+    font-weight: 600;
+}
+
+.offers_body ul li {
+    list-style-type: circle;
+    margin: 4px 0 !important;
+}
+
+.offers_body ul {
+    padding: 20px !important;
+    padding-top: 10px !important;
 }
 
 .viewall_couponArea {
@@ -1789,9 +1811,10 @@ textarea {
     font-size: 14px;
     line-height: 16px;
     color: #222;
-    width: 250px;
+    width: 200px;
     display: inline-block;
-    margin: 12px 0 0 17px;
+    /* margin: 12px 0 0 17px; */
+    margin: 12px 0 0 8px;
     vertical-align: top;
 }
 
@@ -1839,6 +1862,7 @@ textarea {
 .pdp_img_modal {
     max-width: 1000px;
     width: 1000px;
+    margin-top: 100px;
 }
 
 .pdp_CarouselImg {
@@ -1858,7 +1882,7 @@ textarea {
     opacity: 1 !important;
 }
 
-.car_img_modalHead p{
+.car_img_modalHead p {
     color: #262626;
     font-size: 16px;
     text-transform: uppercase;
@@ -1866,34 +1890,41 @@ textarea {
     display: block;
     font-weight: 500;
 }
-.car_img_pdp{
+
+.car_img_pdp {
     color: #222;
     font-size: 20px;
     margin: 0 0 23px;
 }
-.carousel-indicators{
+
+.carousel-indicators {
     position: static;
     flex-wrap: wrap;
 }
-.car_control{
+
+.car_control {
     font-size: 20px;
     color: #000;
     background: #fff;
 }
-.carousel-control-next, .carousel-control-prev{
+
+.carousel-control-next,
+.carousel-control-prev {
     width: 70px;
     height: 38px;
     box-shadow: 3px 0 10px #00000024;
     top: 45%;
 }
-.btn_close_car{
+
+.btn_close_car {
     background-color: #38404a;
     color: #fff;
     width: 30px;
     height: 30px;
     border-radius: 100%;
 }
-.car_header{
+
+.car_header {
     justify-content: end;
 }
 
@@ -1951,9 +1982,10 @@ textarea {
 }
 
 @media (max-width:768px) {
-    .sticky_active{
+    .sticky_active {
         display: none !important;
     }
+
     .mobileTab_price_area {
         display: block;
     }
